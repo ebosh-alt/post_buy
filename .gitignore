@@ -1,0 +1,6 @@
+.db/database-shm
+.db/database-wal
+.idea
+.__pycache__
+__pycache__
+Диаграмма без названия.drawio

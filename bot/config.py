@@ -1,0 +1,20 @@
+from aiogram import Dispatcher, Bot
+from dataclasses import dataclass
+
+
+@dataclass
+class Config:
+    api_key = "6532487125:AAEXJzFXyZKrxDK_dLMLDYoH8GJPBDKJmPA"
+    link_to_bot = "https://t.me/Posts_buy_bot"
+    parse_mode = "Markdown"
+    link_contract = "https://docs.aiogram.dev/en/dev-3.x/dispatcher/filters/magic_filters.html"
+    link_processing_policy = "https://docs.aiogram.dev/en/dev-3.x/dispatcher/filters/magic_filters.html"
+    host = "0.0.0.0"
+    port = 80
+    admin_id = 1321317438
+    # admin_id = 686171972
+    requisites = 4274320106431458
+
+
+dp = Dispatcher()
+bot = Bot(Config.api_key, parse_mode=Config.parse_mode)
