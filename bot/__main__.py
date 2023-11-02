@@ -2,7 +2,7 @@ import asyncio
 import sys
 
 
-sys.path.append("./post_buy")
+sys.path.append("/post_buy")
 from bot.db.Channels import insert
 from bot.utils.UnfixChatMessage import UnfixChatMessage
 
