@@ -6,11 +6,19 @@ from aiogram.types import Message
 from bot import keyboards as kb
 from bot.config import bot
 from bot.const import Profile
-from bot.db import users, User
+from bot.db import users, User, publications
 from bot.utils.GetMessage import get_mes
 from bot.states import States
 
 router = Router()
+
+
+@router.message(Command("publ"))
+async def greeting_user(message: Message, state: FSMContext):
+    txt = ""
+    for publication in publications:
+        txt += "{publication.__dict__}"
+    await bot.send_message(chat_id=message.from_user.id, text=txt)
 
 
 @router.message(Command("start"))
