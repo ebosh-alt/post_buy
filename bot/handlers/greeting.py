@@ -1,3 +1,5 @@
+import datetime
+
 from aiogram import Router
 from aiogram.filters import Command
 from aiogram.fsm.context import FSMContext
@@ -5,7 +7,7 @@ from aiogram.types import Message
 
 from bot import keyboards as kb
 from bot.config import bot
-from bot.const import Profile
+from bot.const import Profile, tzinfo
 from bot.db import users, User, publications
 from bot.utils.GetMessage import get_mes
 from bot.states import States
@@ -15,8 +17,8 @@ router = Router()
 
 @router.message(Command("publ"))
 async def greeting_user(message: Message, state: FSMContext):
-    mes = await bot.send_message(chat_id=-1001323641521, text="тест", reply_to_message_id=1332)
-    await bot.pin_chat_message(message_id=mes.message_id, chat_id=-1001323641521)
+    await bot.send_message(chat_id=message.from_user.id,
+                           text=datetime.datetime.now(tz=tzinfo).strftime("%Y-%m-%d %H:%M"))
 
 
 @router.message(Command("start"))

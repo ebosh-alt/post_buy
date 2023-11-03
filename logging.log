@@ -1,149 +1,38 @@
-INFO 2023-11-03 12:07:17,211 Start polling
-INFO 2023-11-03 12:07:17,412 Run polling for bot @Gorodchat_bot id=6499605545 - 'Gorodchatbot'
-INFO 2023-11-03 12:07:18,337 Update id=875859024 is handled. Duration 270 ms by bot id=6499605545
-INFO 2023-11-03 12:07:20,430 Update id=875859025 is handled. Duration 144 ms by bot id=6499605545
-INFO 2023-11-03 12:07:22,292 Update id=875859026 is handled. Duration 199 ms by bot id=6499605545
-INFO 2023-11-03 12:07:23,589 Update id=875859027 is handled. Duration 124 ms by bot id=6499605545
-INFO 2023-11-03 12:07:25,520 Update id=875859028 is handled. Duration 123 ms by bot id=6499605545
-INFO 2023-11-03 12:07:26,433 Update id=875859029 is not handled. Duration 1 ms by bot id=6499605545
-INFO 2023-11-03 12:07:26,875 Update id=875859030 is handled. Duration 199 ms by bot id=6499605545
-INFO 2023-11-03 12:07:28,274 Update id=875859031 is handled. Duration 236 ms by bot id=6499605545
-INFO 2023-11-03 12:07:29,665 Update id=875859032 is handled. Duration 101 ms by bot id=6499605545
-INFO 2023-11-03 12:07:31,665 Update id=875859033 is handled. Duration 570 ms by bot id=6499605545
-INFO 2023-11-03 12:07:34,279 check_post data: confirm_5191469996
-INFO 2023-11-03 12:07:34,569 Update id=875859034 is handled. Duration 292 ms by bot id=6499605545
-INFO 2023-11-03 12:07:39,186 Update id=875859035 is handled. Duration 202 ms by bot id=6499605545
-INFO 2023-11-03 12:07:43,038 Update id=875859036 is handled. Duration 147 ms by bot id=6499605545
-INFO 2023-11-03 12:07:45,657 Update id=875859037 is handled. Duration 298 ms by bot id=6499605545
-INFO 2023-11-03 12:07:48,322 Update id=875859038 is handled. Duration 150 ms by bot id=6499605545
-INFO 2023-11-03 12:07:49,890 Update id=875859039 is handled. Duration 127 ms by bot id=6499605545
-INFO 2023-11-03 12:07:52,066 Update id=875859040 is handled. Duration 198 ms by bot id=6499605545
-INFO 2023-11-03 12:07:54,052 Update id=875859041 is handled. Duration 242 ms by bot id=6499605545
-INFO 2023-11-03 12:07:55,498 Update id=875859042 is handled. Duration 260 ms by bot id=6499605545
-INFO 2023-11-03 12:07:56,295 Update id=875859043 is not handled. Duration 2 ms by bot id=6499605545
-INFO 2023-11-03 12:07:56,295 Update id=875859044 is not handled. Duration 2 ms by bot id=6499605545
-INFO 2023-11-03 12:07:56,698 Update id=875859045 is handled. Duration 102 ms by bot id=6499605545
-INFO 2023-11-03 12:07:58,502 Update id=875859046 is handled. Duration 751 ms by bot id=6499605545
-INFO 2023-11-03 12:08:00,963 check_post data: confirm_5191469996
-INFO 2023-11-03 12:08:01,289 Update id=875859047 is handled. Duration 327 ms by bot id=6499605545
-INFO 2023-11-03 12:08:05,475 Update id=875859048 is not handled. Duration 2 ms by bot id=6499605545
-ERROR 2023-11-03 12:08:05,475 Cause exception while process update id=875859048 by bot id=6499605545
-IndexError: list index out of range
-Traceback (most recent call last):
-  File "/usr/local/lib/python3.10/dist-packages/aiogram/dispatcher/dispatcher.py", line 308, in _process_update
-    response = await self.feed_update(bot, update, **kwargs)
-  File "/usr/local/lib/python3.10/dist-packages/aiogram/dispatcher/dispatcher.py", line 157, in feed_update
-    response = await self.update.wrap_outer_middleware(
-  File "/usr/local/lib/python3.10/dist-packages/aiogram/dispatcher/middlewares/error.py", line 25, in __call__
-    return await handler(event, data)
-  File "/usr/local/lib/python3.10/dist-packages/aiogram/dispatcher/middlewares/user_context.py", line 27, in __call__
-    return await handler(event, data)
-  File "/usr/local/lib/python3.10/dist-packages/aiogram/fsm/middleware.py", line 41, in __call__
-    return await handler(event, data)
-  File "/usr/local/lib/python3.10/dist-packages/aiogram/dispatcher/event/telegram.py", line 120, in trigger
-    return await wrapped_inner(event, kwargs)
-  File "/usr/local/lib/python3.10/dist-packages/aiogram/dispatcher/event/handler.py", line 42, in call
-    return await wrapped()
-  File "/usr/local/lib/python3.10/dist-packages/aiogram/dispatcher/dispatcher.py", line 275, in _listen_update
-    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
-  File "/usr/local/lib/python3.10/dist-packages/aiogram/dispatcher/router.py", line 116, in propagate_event
-    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
-  File "/usr/local/lib/python3.10/dist-packages/aiogram/dispatcher/router.py", line 111, in _wrapped
-    return await self._propagate_event(
-  File "/usr/local/lib/python3.10/dist-packages/aiogram/dispatcher/router.py", line 144, in _propagate_event
-    response = await router.propagate_event(update_type=update_type, event=event, **kwargs)
-  File "/usr/local/lib/python3.10/dist-packages/aiogram/dispatcher/router.py", line 116, in propagate_event
-    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
-  File "/usr/local/lib/python3.10/dist-packages/aiogram/dispatcher/router.py", line 111, in _wrapped
-    return await self._propagate_event(
-  File "/usr/local/lib/python3.10/dist-packages/aiogram/dispatcher/router.py", line 136, in _propagate_event
-    response = await observer.trigger(event, **kwargs)
-  File "/usr/local/lib/python3.10/dist-packages/aiogram/dispatcher/event/telegram.py", line 120, in trigger
-    return await wrapped_inner(event, kwargs)
-  File "/usr/local/lib/python3.10/dist-packages/aiogram/dispatcher/event/handler.py", line 42, in call
-    return await wrapped()
-  File "/post_buy/bot/handlers/payment.py", line 30, in payment_user
-    price = prices.get_price_publication(district=post.category_channel)
-  File "/post_buy/bot/db/Prices.py", line 57, in get_price_publication
-    return ans[0][0]
-IndexError: list index out of range
-INFO 2023-11-03 15:30:42,597 Start polling
-INFO 2023-11-03 15:30:42,852 Run polling for bot @Gorodchat_bot id=6499605545 - 'Gorodchatbot'
-INFO 2023-11-03 15:30:42,953 Update id=875859123 is not handled. Duration 0 ms by bot id=6499605545
-INFO 2023-11-03 15:30:42,953 Update id=875859124 is not handled. Duration 0 ms by bot id=6499605545
-INFO 2023-11-03 15:30:42,953 Update id=875859125 is not handled. Duration 0 ms by bot id=6499605545
-INFO 2023-11-03 15:30:42,954 Update id=875859126 is not handled. Duration 0 ms by bot id=6499605545
-INFO 2023-11-03 15:30:44,596 Update id=875859127 is handled. Duration 296 ms by bot id=6499605545
-INFO 2023-11-03 15:30:46,608 Update id=875859128 is handled. Duration 250 ms by bot id=6499605545
-INFO 2023-11-03 15:30:48,713 Update id=875859129 is handled. Duration 170 ms by bot id=6499605545
-INFO 2023-11-03 15:30:50,045 Update id=875859130 is handled. Duration 93 ms by bot id=6499605545
-INFO 2023-11-03 15:30:51,621 Update id=875859131 is handled. Duration 109 ms by bot id=6499605545
-INFO 2023-11-03 15:30:53,008 Update id=875859132 is handled. Duration 186 ms by bot id=6499605545
-INFO 2023-11-03 15:30:54,602 Update id=875859133 is handled. Duration 218 ms by bot id=6499605545
-INFO 2023-11-03 15:30:56,244 Update id=875859134 is handled. Duration 171 ms by bot id=6499605545
-INFO 2023-11-03 15:31:06,335 Update id=875859135 is handled. Duration 5405 ms by bot id=6499605545
-INFO 2023-11-03 15:31:09,927 check_post data: confirm_5191469996
-INFO 2023-11-03 15:31:10,211 Update id=875859136 is handled. Duration 280 ms by bot id=6499605545
-INFO 2023-11-03 15:31:16,039 Update id=875859137 is handled. Duration 188 ms by bot id=6499605545
-INFO 2023-11-03 15:31:17,707 Update id=875859138 is handled. Duration 327 ms by bot id=6499605545
-INFO 2023-11-03 15:31:20,295 delete message in checking payment
-INFO 2023-11-03 15:31:20,368 Update id=875859139 is handled. Duration 250 ms by bot id=6499605545
-INFO 2023-11-03 15:31:23,775 add publication {'id': 1, 'name_channel': 'Д', 'id_user': 5191469996, 'text': 'тест', 'price_publication': 50, 'photo': '', 'video': '', 'publication_time': '03/11 20:20', 'fixing': '2023/11/04 18:31', 'message_id': 0}
-INFO 2023-11-03 15:31:23,788 add publication {'id': 2, 'name_channel': 'о', 'id_user': 5191469996, 'text': 'тест', 'price_publication': 50, 'photo': '', 'video': '', 'publication_time': '03/11 20:20', 'fixing': '2023/11/04 18:31', 'message_id': 0}
-INFO 2023-11-03 15:31:23,798 add publication {'id': 3, 'name_channel': 'с', 'id_user': 5191469996, 'text': 'тест', 'price_publication': 50, 'photo': '', 'video': '', 'publication_time': '03/11 20:20', 'fixing': '2023/11/04 18:31', 'message_id': 0}
-INFO 2023-11-03 15:31:23,808 add publication {'id': 4, 'name_channel': 'к', 'id_user': 5191469996, 'text': 'тест', 'price_publication': 50, 'photo': '', 'video': '', 'publication_time': '03/11 20:20', 'fixing': '2023/11/04 18:31', 'message_id': 0}
-INFO 2023-11-03 15:31:23,818 add publication {'id': 5, 'name_channel': 'а', 'id_user': 5191469996, 'text': 'тест', 'price_publication': 50, 'photo': '', 'video': '', 'publication_time': '03/11 20:20', 'fixing': '2023/11/04 18:31', 'message_id': 0}
-INFO 2023-11-03 15:31:23,829 add publication {'id': 6, 'name_channel': ' ', 'id_user': 5191469996, 'text': 'тест', 'price_publication': 50, 'photo': '', 'video': '', 'publication_time': '03/11 20:20', 'fixing': '2023/11/04 18:31', 'message_id': 0}
-INFO 2023-11-03 15:31:23,838 add publication {'id': 7, 'name_channel': 'о', 'id_user': 5191469996, 'text': 'тест', 'price_publication': 50, 'photo': '', 'video': '', 'publication_time': '03/11 20:20', 'fixing': '2023/11/04 18:31', 'message_id': 0}
-INFO 2023-11-03 15:31:23,847 add publication {'id': 8, 'name_channel': 'б', 'id_user': 5191469996, 'text': 'тест', 'price_publication': 50, 'photo': '', 'video': '', 'publication_time': '03/11 20:20', 'fixing': '2023/11/04 18:31', 'message_id': 0}
-INFO 2023-11-03 15:31:23,857 add publication {'id': 9, 'name_channel': 'ъ', 'id_user': 5191469996, 'text': 'тест', 'price_publication': 50, 'photo': '', 'video': '', 'publication_time': '03/11 20:20', 'fixing': '2023/11/04 18:31', 'message_id': 0}
-INFO 2023-11-03 15:31:23,866 add publication {'id': 10, 'name_channel': 'я', 'id_user': 5191469996, 'text': 'тест', 'price_publication': 50, 'photo': '', 'video': '', 'publication_time': '03/11 20:20', 'fixing': '2023/11/04 18:31', 'message_id': 0}
-INFO 2023-11-03 15:31:23,876 add publication {'id': 11, 'name_channel': 'в', 'id_user': 5191469996, 'text': 'тест', 'price_publication': 50, 'photo': '', 'video': '', 'publication_time': '03/11 20:20', 'fixing': '2023/11/04 18:31', 'message_id': 0}
-INFO 2023-11-03 15:31:23,885 add publication {'id': 12, 'name_channel': 'л', 'id_user': 5191469996, 'text': 'тест', 'price_publication': 50, 'photo': '', 'video': '', 'publication_time': '03/11 20:20', 'fixing': '2023/11/04 18:31', 'message_id': 0}
-INFO 2023-11-03 15:31:23,895 add publication {'id': 13, 'name_channel': 'е', 'id_user': 5191469996, 'text': 'тест', 'price_publication': 50, 'photo': '', 'video': '', 'publication_time': '03/11 20:20', 'fixing': '2023/11/04 18:31', 'message_id': 0}
-INFO 2023-11-03 15:31:23,904 add publication {'id': 14, 'name_channel': 'н', 'id_user': 5191469996, 'text': 'тест', 'price_publication': 50, 'photo': '', 'video': '', 'publication_time': '03/11 20:20', 'fixing': '2023/11/04 18:31', 'message_id': 0}
-INFO 2023-11-03 15:31:23,914 add publication {'id': 15, 'name_channel': 'и', 'id_user': 5191469996, 'text': 'тест', 'price_publication': 50, 'photo': '', 'video': '', 'publication_time': '03/11 20:20', 'fixing': '2023/11/04 18:31', 'message_id': 0}
-INFO 2023-11-03 15:31:23,925 add publication {'id': 16, 'name_channel': 'й', 'id_user': 5191469996, 'text': 'тест', 'price_publication': 50, 'photo': '', 'video': '', 'publication_time': '03/11 20:20', 'fixing': '2023/11/04 18:31', 'message_id': 0}
-INFO 2023-11-03 15:31:24,032 Update id=875859140 is handled. Duration 406 ms by bot id=6499605545
-INFO 2023-11-03 15:32:44,840 Polling stopped
-INFO 2023-11-03 15:32:44,842 Polling stopped for bot @Gorodchat_bot id=6499605545 - 'Gorodchatbot'
-INFO 2023-11-03 15:32:49,789 Start polling
-INFO 2023-11-03 15:32:49,977 Run polling for bot @Gorodchat_bot id=6499605545 - 'Gorodchatbot'
-INFO 2023-11-03 15:32:50,460 Update id=875859141 is handled. Duration 389 ms by bot id=6499605545
-INFO 2023-11-03 15:32:52,052 Update id=875859142 is handled. Duration 156 ms by bot id=6499605545
-INFO 2023-11-03 15:32:53,726 Update id=875859143 is handled. Duration 171 ms by bot id=6499605545
-INFO 2023-11-03 15:32:54,996 Update id=875859144 is handled. Duration 171 ms by bot id=6499605545
-INFO 2023-11-03 15:32:56,481 Update id=875859145 is handled. Duration 186 ms by bot id=6499605545
-INFO 2023-11-03 15:32:57,861 Update id=875859146 is handled. Duration 280 ms by bot id=6499605545
-INFO 2023-11-03 15:32:59,009 Update id=875859147 is handled. Duration 156 ms by bot id=6499605545
-INFO 2023-11-03 15:33:00,600 Update id=875859148 is handled. Duration 108 ms by bot id=6499605545
-INFO 2023-11-03 15:33:02,848 Update id=875859149 is handled. Duration 766 ms by bot id=6499605545
-INFO 2023-11-03 15:33:05,896 check_post data: confirm_5191469996
-INFO 2023-11-03 15:33:06,295 Update id=875859150 is handled. Duration 391 ms by bot id=6499605545
-INFO 2023-11-03 15:33:10,238 Update id=875859151 is handled. Duration 407 ms by bot id=6499605545
-INFO 2023-11-03 15:33:11,196 Update id=875859152 is handled. Duration 281 ms by bot id=6499605545
-INFO 2023-11-03 15:33:14,093 delete message in checking payment
-INFO 2023-11-03 15:33:14,234 Update id=875859153 is handled. Duration 405 ms by bot id=6499605545
-INFO 2023-11-03 15:33:18,986 add publication {'id': 17, 'name_channel': 'Д', 'id_user': 5191469996, 'text': 's', 'price_publication': 50, 'photo': '', 'video': '', 'publication_time': '05/11 20:20', 'fixing': '2023/11/04 18:33', 'message_id': 0}
-INFO 2023-11-03 15:33:19,004 add publication {'id': 18, 'name_channel': 'о', 'id_user': 5191469996, 'text': 's', 'price_publication': 50, 'photo': '', 'video': '', 'publication_time': '05/11 20:20', 'fixing': '2023/11/04 18:33', 'message_id': 0}
-INFO 2023-11-03 15:33:19,014 add publication {'id': 19, 'name_channel': 'с', 'id_user': 5191469996, 'text': 's', 'price_publication': 50, 'photo': '', 'video': '', 'publication_time': '05/11 20:20', 'fixing': '2023/11/04 18:33', 'message_id': 0}
-INFO 2023-11-03 15:33:19,023 add publication {'id': 20, 'name_channel': 'к', 'id_user': 5191469996, 'text': 's', 'price_publication': 50, 'photo': '', 'video': '', 'publication_time': '05/11 20:20', 'fixing': '2023/11/04 18:33', 'message_id': 0}
-INFO 2023-11-03 15:33:19,033 add publication {'id': 21, 'name_channel': 'а', 'id_user': 5191469996, 'text': 's', 'price_publication': 50, 'photo': '', 'video': '', 'publication_time': '05/11 20:20', 'fixing': '2023/11/04 18:33', 'message_id': 0}
-INFO 2023-11-03 15:33:19,043 add publication {'id': 22, 'name_channel': ' ', 'id_user': 5191469996, 'text': 's', 'price_publication': 50, 'photo': '', 'video': '', 'publication_time': '05/11 20:20', 'fixing': '2023/11/04 18:33', 'message_id': 0}
-INFO 2023-11-03 15:33:19,052 add publication {'id': 23, 'name_channel': 'о', 'id_user': 5191469996, 'text': 's', 'price_publication': 50, 'photo': '', 'video': '', 'publication_time': '05/11 20:20', 'fixing': '2023/11/04 18:33', 'message_id': 0}
-INFO 2023-11-03 15:33:19,061 add publication {'id': 24, 'name_channel': 'б', 'id_user': 5191469996, 'text': 's', 'price_publication': 50, 'photo': '', 'video': '', 'publication_time': '05/11 20:20', 'fixing': '2023/11/04 18:33', 'message_id': 0}
-INFO 2023-11-03 15:33:19,069 add publication {'id': 25, 'name_channel': 'ъ', 'id_user': 5191469996, 'text': 's', 'price_publication': 50, 'photo': '', 'video': '', 'publication_time': '05/11 20:20', 'fixing': '2023/11/04 18:33', 'message_id': 0}
-INFO 2023-11-03 15:33:19,080 add publication {'id': 26, 'name_channel': 'я', 'id_user': 5191469996, 'text': 's', 'price_publication': 50, 'photo': '', 'video': '', 'publication_time': '05/11 20:20', 'fixing': '2023/11/04 18:33', 'message_id': 0}
-INFO 2023-11-03 15:33:19,088 add publication {'id': 27, 'name_channel': 'в', 'id_user': 5191469996, 'text': 's', 'price_publication': 50, 'photo': '', 'video': '', 'publication_time': '05/11 20:20', 'fixing': '2023/11/04 18:33', 'message_id': 0}
-INFO 2023-11-03 15:33:19,098 add publication {'id': 28, 'name_channel': 'л', 'id_user': 5191469996, 'text': 's', 'price_publication': 50, 'photo': '', 'video': '', 'publication_time': '05/11 20:20', 'fixing': '2023/11/04 18:33', 'message_id': 0}
-INFO 2023-11-03 15:33:19,109 add publication {'id': 29, 'name_channel': 'е', 'id_user': 5191469996, 'text': 's', 'price_publication': 50, 'photo': '', 'video': '', 'publication_time': '05/11 20:20', 'fixing': '2023/11/04 18:33', 'message_id': 0}
-INFO 2023-11-03 15:33:19,119 add publication {'id': 30, 'name_channel': 'н', 'id_user': 5191469996, 'text': 's', 'price_publication': 50, 'photo': '', 'video': '', 'publication_time': '05/11 20:20', 'fixing': '2023/11/04 18:33', 'message_id': 0}
-INFO 2023-11-03 15:33:19,130 add publication {'id': 31, 'name_channel': 'и', 'id_user': 5191469996, 'text': 's', 'price_publication': 50, 'photo': '', 'video': '', 'publication_time': '05/11 20:20', 'fixing': '2023/11/04 18:33', 'message_id': 0}
-INFO 2023-11-03 15:33:19,141 add publication {'id': 32, 'name_channel': 'й', 'id_user': 5191469996, 'text': 's', 'price_publication': 50, 'photo': '', 'video': '', 'publication_time': '05/11 20:20', 'fixing': '2023/11/04 18:33', 'message_id': 0}
-INFO 2023-11-03 15:33:19,278 Update id=875859154 is handled. Duration 391 ms by bot id=6499605545
-INFO 2023-11-03 15:33:29,182 Polling stopped
-INFO 2023-11-03 15:33:29,185 Polling stopped for bot @Gorodchat_bot id=6499605545 - 'Gorodchatbot'
-INFO 2023-11-03 15:33:48,807 Start polling
-INFO 2023-11-03 15:33:49,121 Run polling for bot @Gorodchat_bot id=6499605545 - 'Gorodchatbot'
-INFO 2023-11-03 15:33:59,936 Polling stopped
-INFO 2023-11-03 15:33:59,938 Polling stopped for bot @Gorodchat_bot id=6499605545 - 'Gorodchatbot'
+INFO 2023-11-04 01:32:32,464 Start polling
+INFO 2023-11-04 01:32:32,841 Run polling for bot @Posts_buy_bot id=6532487125 - 'Posts_buy'
+INFO 2023-11-04 01:32:32,977 Update id=273144614 is not handled. Duration 14 ms by bot id=6532487125
+INFO 2023-11-04 01:32:33,437 Update id=273144615 is handled. Duration 296 ms by bot id=6532487125
+INFO 2023-11-04 01:32:35,563 Update id=273144616 is handled. Duration 579 ms by bot id=6532487125
+INFO 2023-11-04 01:32:37,605 Update id=273144617 is handled. Duration 795 ms by bot id=6532487125
+INFO 2023-11-04 01:32:39,687 Update id=273144618 is handled. Duration 93 ms by bot id=6532487125
+INFO 2023-11-04 01:36:19,596 Update id=273144619 is handled. Duration 328 ms by bot id=6532487125
+INFO 2023-11-04 01:36:27,800 Update id=273144620 is handled. Duration 343 ms by bot id=6532487125
+INFO 2023-11-04 01:36:29,127 Update id=273144621 is handled. Duration 172 ms by bot id=6532487125
+INFO 2023-11-04 01:36:30,301 Update id=273144622 is handled. Duration 140 ms by bot id=6532487125
+INFO 2023-11-04 01:36:36,137 Update id=273144623 is handled. Duration 671 ms by bot id=6532487125
+INFO 2023-11-04 01:36:40,689 check_post data: confirm_5191469996
+INFO 2023-11-04 01:36:40,970 Update id=273144624 is handled. Duration 281 ms by bot id=6532487125
+INFO 2023-11-04 01:36:45,695 Update id=273144625 is handled. Duration 218 ms by bot id=6532487125
+INFO 2023-11-04 01:36:47,240 Update id=273144626 is handled. Duration 170 ms by bot id=6532487125
+INFO 2023-11-04 01:36:49,848 delete message in checking payment
+INFO 2023-11-04 01:36:49,947 Update id=273144627 is handled. Duration 375 ms by bot id=6532487125
+INFO 2023-11-04 01:36:53,761 Update id=273144628 is handled. Duration 93 ms by bot id=6532487125
+INFO 2023-11-04 01:36:56,710 Update id=273144629 is handled. Duration 516 ms by bot id=6532487125
+INFO 2023-11-04 01:36:58,964 Update id=273144630 is handled. Duration 750 ms by bot id=6532487125
+INFO 2023-11-04 01:36:59,835 Update id=273144631 is handled. Duration 141 ms by bot id=6532487125
+INFO 2023-11-04 01:37:01,936 Update id=273144632 is handled. Duration 110 ms by bot id=6532487125
+INFO 2023-11-04 01:37:03,566 Update id=273144633 is handled. Duration 187 ms by bot id=6532487125
+INFO 2023-11-04 01:37:04,801 Update id=273144634 is handled. Duration 171 ms by bot id=6532487125
+INFO 2023-11-04 01:37:06,234 Update id=273144635 is handled. Duration 187 ms by bot id=6532487125
+INFO 2023-11-04 01:37:08,961 Update id=273144636 is handled. Duration 422 ms by bot id=6532487125
+INFO 2023-11-04 01:37:12,064 Update id=273144637 is handled. Duration 93 ms by bot id=6532487125
+INFO 2023-11-04 01:37:14,744 Update id=273144638 is handled. Duration 593 ms by bot id=6532487125
+INFO 2023-11-04 01:37:16,399 Update id=273144639 is handled. Duration 703 ms by bot id=6532487125
+INFO 2023-11-04 01:37:17,227 Update id=273144640 is handled. Duration 93 ms by bot id=6532487125
+INFO 2023-11-04 01:37:18,461 Update id=273144641 is handled. Duration 93 ms by bot id=6532487125
+INFO 2023-11-04 01:37:20,513 Update id=273144642 is handled. Duration 265 ms by bot id=6532487125
+INFO 2023-11-04 01:37:21,754 Update id=273144643 is handled. Duration 156 ms by bot id=6532487125
+INFO 2023-11-04 01:37:22,693 Update id=273144644 is handled. Duration 79 ms by bot id=6532487125
+INFO 2023-11-04 01:37:28,517 Update id=273144645 is handled. Duration 781 ms by bot id=6532487125
+INFO 2023-11-04 01:40:05,756 Polling stopped
+INFO 2023-11-04 01:40:05,762 Polling stopped for bot @Posts_buy_bot id=6532487125 - 'Posts_buy'

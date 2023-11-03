@@ -1,6 +1,7 @@
 from aiogram import types
 from aiogram.utils.keyboard import InlineKeyboardBuilder, ReplyKeyboardBuilder
 from bot.db import channels
+from bot.const import tzinfo
 import datetime
 
 
@@ -69,7 +70,7 @@ def keyboard_channel_category() -> types.InlineKeyboardMarkup:
 
 
 def button_date() -> dict:
-    now = datetime.datetime.now()
+    now = datetime.datetime.now(tz=tzinfo)
     buttons = {f"Сегодня ({now.strftime('%d/%m')})": now.strftime('%d/%m'),
                f"Завтра ({(now + datetime.timedelta(days=1)).strftime('%d/%m')})":
                    (now + datetime.timedelta(days=1)).strftime('%d/%m')
@@ -78,7 +79,6 @@ def button_date() -> dict:
         date = (now + datetime.timedelta(days=i)).strftime('%d/%m')
         buttons.update({date: date})
 
-    # keyboard = create_keyboard(buttons)
     return buttons
 
 
