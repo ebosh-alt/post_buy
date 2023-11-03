@@ -5,6 +5,7 @@ import time
 from multiprocessing import Process
 
 from bot.config import bot
+from bot.const import tz
 from bot.db import publications, channels
 
 
@@ -27,7 +28,7 @@ class UnfixChatMessage:
         await bot.unpin_chat_message(chat_id=chat_id, message_id=message_id)
 
     def work(self):
-        current_time = datetime.datetime.now().strftime("%Y/%m/%d %H:%M")
+        current_time = datetime.datetime.now(tz=tz).strftime("%Y/%m/%d %H:%M")
         for publication in publications:
             if publication.fixing == current_time:
                 chat_id = channels.get_id_by_name(publication.name_channel)

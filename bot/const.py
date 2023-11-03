@@ -1,6 +1,6 @@
 from dataclasses import dataclass
 
-tz = 3
+tz = 6
 
 
 @dataclass
