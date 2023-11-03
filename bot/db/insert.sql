@@ -8,7 +8,7 @@ values ('КАО', 4338, 16, 1500, 250),
        ('Доска объявлений',1716,1,0,50),
        ('Весь город', 13821, 75, 3500, 500)
 ;
-drop table price;
+drop table publication;
 insert into price (district, price_publication, price_fixing)
 values (1, '', '');
 

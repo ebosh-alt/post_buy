@@ -10,22 +10,23 @@ from bot.const import tzinfo
 from bot.db import publications, channels
 
 
-async def send_mess(chat_id: int, text: str, fixing: bool) -> int:
-    mes = await bot.send_message(chat_id=chat_id, text=text)
+async def send_mess(chat_id: int, text: str, fixing: bool, reply_to_message_id: int = None) -> int:
+    print(text)
+    mes = await bot.send_message(chat_id=chat_id, text=text, reply_to_message_id=reply_to_message_id)
+    if fixing:
+        await bot.pin_chat_message(message_id=mes.message_id, chat_id=chat_id, reply_to_message_id=reply_to_message_id)
+    return mes.message_id
+
+
+async def send_photo(chat_id: int, text: str, photo, fixing: bool, reply_to_message_id: int = None) -> int:
+    mes = await bot.send_photo(chat_id=chat_id, photo=photo, caption=text, reply_to_message_id=reply_to_message_id)
     if fixing:
         await bot.pin_chat_message(message_id=mes.message_id, chat_id=chat_id)
     return mes.message_id
 
 
-async def send_photo(chat_id: int, text: str, photo, fixing: bool) -> int:
-    mes = await bot.send_photo(chat_id=chat_id, photo=photo, caption=text)
-    if fixing:
-        await bot.pin_chat_message(message_id=mes.message_id, chat_id=chat_id)
-    return mes.message_id
-
-
-async def send_video(chat_id: int, text: str, video, fixing: bool) -> int:
-    mes = await bot.send_video(chat_id=chat_id, video=video, caption=text)
+async def send_video(chat_id: int, text: str, video, fixing: bool, reply_to_message_id: int = None) -> int:
+    mes = await bot.send_video(chat_id=chat_id, video=video, caption=text, reply_to_message_id=reply_to_message_id)
     if fixing:
         await bot.pin_chat_message(message_id=mes.message_id, chat_id=chat_id)
     return mes.message_id
@@ -48,28 +49,36 @@ class SendingPost:
     @staticmethod
     def work():
         current_time = datetime.datetime.now(tz=tzinfo).strftime("%d/%m %H:%M")
+
         for publication in publications:
             if publication.publication_time == current_time:
                 chat_id = channels.get_id_by_name(publication.name_channel)
+                reply_to_message_id = None
+                if publication.name_channel == "Доска объявлений":
+                    reply_to_message_id = 1326
                 if publication.photo != "":
                     photo = FSInputFile(publication.photo)
                     loop = asyncio.get_event_loop()
+
                     mes_id = loop.run_until_complete(send_photo(chat_id=chat_id,
                                                                 text=publication.text,
                                                                 photo=photo,
-                                                                fixing=publication.fixing))
+                                                                fixing=publication.fixing,
+                                                                reply_to_message_id=reply_to_message_id))
                 elif publication.video != "":
                     video = FSInputFile(publication.video)
                     loop = asyncio.get_event_loop()
                     mes_id = loop.run_until_complete(send_video(chat_id=chat_id,
                                                                 text=publication.text,
                                                                 video=video,
-                                                                fixing=publication.fixing))
+                                                                fixing=publication.fixing,
+                                                                reply_to_message_id=reply_to_message_id))
                 else:
                     loop = asyncio.get_event_loop()
                     mes_id = loop.run_until_complete(send_mess(chat_id=chat_id,
                                                                text=publication.text,
-                                                               fixing=publication.fixing))
+                                                               fixing=publication.fixing,
+                                                               reply_to_message_id=reply_to_message_id))
                 publication.message_id = mes_id
                 publications.update(publication)
 

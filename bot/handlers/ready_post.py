@@ -24,8 +24,8 @@ async def ready_post(call: CallbackQuery, state: FSMContext):
 
     for name in post.name_channels:
         publication = Publication(len(publications) + 1)
-        # publication.id =
-        publication.name_channel = name
+
+        publication.name_channel = name.strip()
         publication.id_user = call.from_user.id
         publication.price_publication = post.price
         publication.photo = post.photo

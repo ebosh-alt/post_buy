@@ -114,7 +114,7 @@ kb_by_time = create_keyboard({"Вернуться к выбору даты": "ne
 cancel_post_kb = create_keyboard({"Направить новую информацию": "continue",
                                   "Вернуться в начало": "buy_advertisement"})
 success_payment_kb_user = create_keyboard({
-    "Подтвердить": "ready_post",
+    "Готово": "ready_post",
     "Изменить содержимое поста": "continue",
     "Изменить дату публикации": "next_step_2"
 })

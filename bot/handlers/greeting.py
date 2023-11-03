@@ -15,10 +15,8 @@ router = Router()
 
 @router.message(Command("publ"))
 async def greeting_user(message: Message, state: FSMContext):
-    txt = ""
-    for publication in publications:
-        txt += f"{publication.__dict__}"
-    await bot.send_message(chat_id=message.from_user.id, text=txt)
+    mes = await bot.send_message(chat_id=-1001323641521, text="тест", reply_to_message_id=1332)
+    await bot.pin_chat_message(message_id=mes.message_id, chat_id=-1001323641521)
 
 
 @router.message(Command("start"))

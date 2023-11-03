@@ -83,7 +83,7 @@ async def choice_category(call: CallbackQuery, state: FSMContext):
             post.category_channel = call.data
             match call.data:
                 case "Доска объявлений":
-                    post.name_channels = tuple("Доска объявлений")
+                    post.name_channels = ["Доска объявлений"]
                 case "Весь город":
                     post.name_channels = tuple(channels.get_all_name())
                 case _:
