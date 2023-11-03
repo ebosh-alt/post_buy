@@ -8,7 +8,7 @@ from aiogram.types import Message, FSInputFile, CallbackQuery
 
 from bot import keyboards as kb
 from bot.config import Config, bot
-from bot.const import tz
+from bot.const import tzinfo
 from bot.db import Publication, publications
 from bot.db.Post import Post
 from bot.states import States
@@ -32,7 +32,7 @@ async def ready_post(call: CallbackQuery, state: FSMContext):
         publication.text = post.text
         publication.video = post.video
         publication.publication_time = post.date
-        publication.fixing = ((datetime.datetime.now() + datetime.timedelta(days=post.fixing, hours=tz)).
+        publication.fixing = ((datetime.datetime.now(tz=tzinfo) + datetime.timedelta(days=post.fixing)).
                               strftime("%Y/%m/%d %H:%M"))
         logging.log(logging.INFO, f"add publication {publication.__dict__}")
         publications.add(publication)

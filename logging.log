@@ -1,16 +1,5 @@
-INFO 2023-11-01 18:37:06,042 Start polling
-INFO 2023-11-01 18:37:06,287 Run polling for bot @Posts_buy_bot id=6532487125 - 'Posts_buy'
-INFO 2023-11-01 18:37:06,698 Update id=273144604 is handled. Duration 312 ms by bot id=6532487125
-INFO 2023-11-01 18:37:08,815 Update id=273144605 is handled. Duration 218 ms by bot id=6532487125
-INFO 2023-11-01 18:37:10,033 Update id=273144606 is handled. Duration 297 ms by bot id=6532487125
-INFO 2023-11-01 18:37:11,008 Update id=273144607 is handled. Duration 92 ms by bot id=6532487125
-INFO 2023-11-01 18:37:12,274 Update id=273144608 is handled. Duration 110 ms by bot id=6532487125
-INFO 2023-11-01 18:37:14,194 Update id=273144609 is handled. Duration 312 ms by bot id=6532487125
-INFO 2023-11-01 18:37:15,563 Update id=273144610 is handled. Duration 250 ms by bot id=6532487125
-INFO 2023-11-01 18:37:16,687 Update id=273144611 is handled. Duration 93 ms by bot id=6532487125
-INFO 2023-11-01 18:37:17,804 Update id=273144612 is handled. Duration 625 ms by bot id=6532487125
-INFO 2023-11-01 18:37:20,306 check_post data: confirm_5191469996
-INFO 2023-11-01 18:37:20,306 confirm post 2947086182872798546
-INFO 2023-11-01 18:37:20,606 Update id=273144613 is handled. Duration 312 ms by bot id=6532487125
-INFO 2023-11-01 18:37:42,275 Polling stopped
-INFO 2023-11-01 18:37:42,277 Polling stopped for bot @Posts_buy_bot id=6532487125 - 'Posts_buy'
+INFO 2023-11-03 14:13:19,945 Start polling
+INFO 2023-11-03 14:13:20,343 Run polling for bot @Gorodchat_bot id=6499605545 - 'Gorodchatbot'
+INFO 2023-11-03 14:13:20,472 Update id=875858899 is not handled. Duration 16 ms by bot id=6499605545
+INFO 2023-11-03 14:13:37,287 Polling stopped
+INFO 2023-11-03 14:13:37,290 Polling stopped for bot @Gorodchat_bot id=6499605545 - 'Gorodchatbot'

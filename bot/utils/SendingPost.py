@@ -6,7 +6,7 @@ from multiprocessing import Process
 from aiogram.types import FSInputFile
 
 from bot.config import bot
-from bot.const import tz
+from bot.const import tzinfo
 from bot.db import publications, channels
 
 
@@ -47,7 +47,7 @@ class SendingPost:
 
     @staticmethod
     def work():
-        current_time = datetime.datetime.now(tz=tz).strftime("%d/%m %H:%M")
+        current_time = datetime.datetime.now(tz=tzinfo).strftime("%d/%m %H:%M")
         for publication in publications:
             if publication.publication_time == current_time:
                 chat_id = channels.get_id_by_name(publication.name_channel)
