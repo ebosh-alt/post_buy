@@ -1,27 +1,34 @@
-INFO 2023-11-03 11:16:45,125 Start polling
-INFO 2023-11-03 11:16:45,338 Run polling for bot @Gorodchat_bot id=6499605545 - 'Gorodchatbot'
-INFO 2023-11-03 11:16:45,432 Update id=875858900 is not handled. Duration 4 ms by bot id=6499605545
-INFO 2023-11-03 11:16:45,432 Update id=875858901 is not handled. Duration 3 ms by bot id=6499605545
-INFO 2023-11-03 11:16:45,432 Update id=875858902 is not handled. Duration 2 ms by bot id=6499605545
-INFO 2023-11-03 11:16:49,868 Update id=875858903 is not handled. Duration 1 ms by bot id=6499605545
-INFO 2023-11-03 11:16:51,990 Update id=875858904 is handled. Duration 240 ms by bot id=6499605545
-INFO 2023-11-03 11:16:54,145 Update id=875858905 is handled. Duration 140 ms by bot id=6499605545
-INFO 2023-11-03 11:18:01,117 Update id=875858906 is handled. Duration 302 ms by bot id=6499605545
-INFO 2023-11-03 11:19:32,808 Update id=875858907 is handled. Duration 200 ms by bot id=6499605545
-INFO 2023-11-03 11:19:45,742 Update id=875858908 is handled. Duration 153 ms by bot id=6499605545
-INFO 2023-11-03 11:19:52,177 ['КАО', 'ЛАО', 'ОАО', 'САО', 'ЦАО']
-INFO 2023-11-03 11:19:52,266 Update id=875858909 is handled. Duration 120 ms by bot id=6499605545
-INFO 2023-11-03 11:20:06,493 Update id=875858910 is handled. Duration 141 ms by bot id=6499605545
-INFO 2023-11-03 11:20:15,039 Update id=875858911 is handled. Duration 249 ms by bot id=6499605545
-INFO 2023-11-03 11:20:17,411 Update id=875858912 is handled. Duration 126 ms by bot id=6499605545
-INFO 2023-11-03 11:20:18,782 Update id=875858913 is handled. Duration 117 ms by bot id=6499605545
-INFO 2023-11-03 11:20:23,104 Update id=875858914 is handled. Duration 251 ms by bot id=6499605545
-INFO 2023-11-03 11:20:23,463 Update id=875858915 is not handled. Duration 1 ms by bot id=6499605545
-INFO 2023-11-03 11:20:25,004 Update id=875858916 is handled. Duration 168 ms by bot id=6499605545
-INFO 2023-11-03 11:20:32,387 Update id=875858917 is handled. Duration 98 ms by bot id=6499605545
-INFO 2023-11-03 11:20:53,496 Update id=875858918 is not handled. Duration 258 ms by bot id=6499605545
-ERROR 2023-11-03 11:20:53,497 Cause exception while process update id=875858918 by bot id=6499605545
-TypeError: 'NoneType' object is not iterable
+INFO 2023-11-03 12:07:17,211 Start polling
+INFO 2023-11-03 12:07:17,412 Run polling for bot @Gorodchat_bot id=6499605545 - 'Gorodchatbot'
+INFO 2023-11-03 12:07:18,337 Update id=875859024 is handled. Duration 270 ms by bot id=6499605545
+INFO 2023-11-03 12:07:20,430 Update id=875859025 is handled. Duration 144 ms by bot id=6499605545
+INFO 2023-11-03 12:07:22,292 Update id=875859026 is handled. Duration 199 ms by bot id=6499605545
+INFO 2023-11-03 12:07:23,589 Update id=875859027 is handled. Duration 124 ms by bot id=6499605545
+INFO 2023-11-03 12:07:25,520 Update id=875859028 is handled. Duration 123 ms by bot id=6499605545
+INFO 2023-11-03 12:07:26,433 Update id=875859029 is not handled. Duration 1 ms by bot id=6499605545
+INFO 2023-11-03 12:07:26,875 Update id=875859030 is handled. Duration 199 ms by bot id=6499605545
+INFO 2023-11-03 12:07:28,274 Update id=875859031 is handled. Duration 236 ms by bot id=6499605545
+INFO 2023-11-03 12:07:29,665 Update id=875859032 is handled. Duration 101 ms by bot id=6499605545
+INFO 2023-11-03 12:07:31,665 Update id=875859033 is handled. Duration 570 ms by bot id=6499605545
+INFO 2023-11-03 12:07:34,279 check_post data: confirm_5191469996
+INFO 2023-11-03 12:07:34,569 Update id=875859034 is handled. Duration 292 ms by bot id=6499605545
+INFO 2023-11-03 12:07:39,186 Update id=875859035 is handled. Duration 202 ms by bot id=6499605545
+INFO 2023-11-03 12:07:43,038 Update id=875859036 is handled. Duration 147 ms by bot id=6499605545
+INFO 2023-11-03 12:07:45,657 Update id=875859037 is handled. Duration 298 ms by bot id=6499605545
+INFO 2023-11-03 12:07:48,322 Update id=875859038 is handled. Duration 150 ms by bot id=6499605545
+INFO 2023-11-03 12:07:49,890 Update id=875859039 is handled. Duration 127 ms by bot id=6499605545
+INFO 2023-11-03 12:07:52,066 Update id=875859040 is handled. Duration 198 ms by bot id=6499605545
+INFO 2023-11-03 12:07:54,052 Update id=875859041 is handled. Duration 242 ms by bot id=6499605545
+INFO 2023-11-03 12:07:55,498 Update id=875859042 is handled. Duration 260 ms by bot id=6499605545
+INFO 2023-11-03 12:07:56,295 Update id=875859043 is not handled. Duration 2 ms by bot id=6499605545
+INFO 2023-11-03 12:07:56,295 Update id=875859044 is not handled. Duration 2 ms by bot id=6499605545
+INFO 2023-11-03 12:07:56,698 Update id=875859045 is handled. Duration 102 ms by bot id=6499605545
+INFO 2023-11-03 12:07:58,502 Update id=875859046 is handled. Duration 751 ms by bot id=6499605545
+INFO 2023-11-03 12:08:00,963 check_post data: confirm_5191469996
+INFO 2023-11-03 12:08:01,289 Update id=875859047 is handled. Duration 327 ms by bot id=6499605545
+INFO 2023-11-03 12:08:05,475 Update id=875859048 is not handled. Duration 2 ms by bot id=6499605545
+ERROR 2023-11-03 12:08:05,475 Cause exception while process update id=875859048 by bot id=6499605545
+IndexError: list index out of range
 Traceback (most recent call last):
   File "/usr/local/lib/python3.10/dist-packages/aiogram/dispatcher/dispatcher.py", line 308, in _process_update
     response = await self.feed_update(bot, update, **kwargs)
@@ -55,257 +62,8 @@ Traceback (most recent call last):
     return await wrapped_inner(event, kwargs)
   File "/usr/local/lib/python3.10/dist-packages/aiogram/dispatcher/event/handler.py", line 42, in call
     return await wrapped()
-  File "/post_buy/bot/handlers/input_date.py", line 72, in inp_data
-    free = check_time_public(post.name_channels, date)
-  File "/post_buy/bot/handlers/input_date.py", line 19, in check_time_public
-    for name in name_channels:
-TypeError: 'NoneType' object is not iterable
-INFO 2023-11-03 11:21:11,371 Update id=875858919 is not handled. Duration 244 ms by bot id=6499605545
-ERROR 2023-11-03 11:21:11,371 Cause exception while process update id=875858919 by bot id=6499605545
-TypeError: 'NoneType' object is not iterable
-Traceback (most recent call last):
-  File "/usr/local/lib/python3.10/dist-packages/aiogram/dispatcher/dispatcher.py", line 308, in _process_update
-    response = await self.feed_update(bot, update, **kwargs)
-  File "/usr/local/lib/python3.10/dist-packages/aiogram/dispatcher/dispatcher.py", line 157, in feed_update
-    response = await self.update.wrap_outer_middleware(
-  File "/usr/local/lib/python3.10/dist-packages/aiogram/dispatcher/middlewares/error.py", line 25, in __call__
-    return await handler(event, data)
-  File "/usr/local/lib/python3.10/dist-packages/aiogram/dispatcher/middlewares/user_context.py", line 27, in __call__
-    return await handler(event, data)
-  File "/usr/local/lib/python3.10/dist-packages/aiogram/fsm/middleware.py", line 41, in __call__
-    return await handler(event, data)
-  File "/usr/local/lib/python3.10/dist-packages/aiogram/dispatcher/event/telegram.py", line 120, in trigger
-    return await wrapped_inner(event, kwargs)
-  File "/usr/local/lib/python3.10/dist-packages/aiogram/dispatcher/event/handler.py", line 42, in call
-    return await wrapped()
-  File "/usr/local/lib/python3.10/dist-packages/aiogram/dispatcher/dispatcher.py", line 275, in _listen_update
-    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
-  File "/usr/local/lib/python3.10/dist-packages/aiogram/dispatcher/router.py", line 116, in propagate_event
-    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
-  File "/usr/local/lib/python3.10/dist-packages/aiogram/dispatcher/router.py", line 111, in _wrapped
-    return await self._propagate_event(
-  File "/usr/local/lib/python3.10/dist-packages/aiogram/dispatcher/router.py", line 144, in _propagate_event
-    response = await router.propagate_event(update_type=update_type, event=event, **kwargs)
-  File "/usr/local/lib/python3.10/dist-packages/aiogram/dispatcher/router.py", line 116, in propagate_event
-    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
-  File "/usr/local/lib/python3.10/dist-packages/aiogram/dispatcher/router.py", line 111, in _wrapped
-    return await self._propagate_event(
-  File "/usr/local/lib/python3.10/dist-packages/aiogram/dispatcher/router.py", line 136, in _propagate_event
-    response = await observer.trigger(event, **kwargs)
-  File "/usr/local/lib/python3.10/dist-packages/aiogram/dispatcher/event/telegram.py", line 120, in trigger
-    return await wrapped_inner(event, kwargs)
-  File "/usr/local/lib/python3.10/dist-packages/aiogram/dispatcher/event/handler.py", line 42, in call
-    return await wrapped()
-  File "/post_buy/bot/handlers/input_date.py", line 72, in inp_data
-    free = check_time_public(post.name_channels, date)
-  File "/post_buy/bot/handlers/input_date.py", line 19, in check_time_public
-    for name in name_channels:
-TypeError: 'NoneType' object is not iterable
-INFO 2023-11-03 11:22:15,986 Update id=875858920 is not handled. Duration 2 ms by bot id=6499605545
-INFO 2023-11-03 11:22:39,102 Update id=875858921 is not handled. Duration 242 ms by bot id=6499605545
-ERROR 2023-11-03 11:22:39,102 Cause exception while process update id=875858921 by bot id=6499605545
-TypeError: 'NoneType' object is not iterable
-Traceback (most recent call last):
-  File "/usr/local/lib/python3.10/dist-packages/aiogram/dispatcher/dispatcher.py", line 308, in _process_update
-    response = await self.feed_update(bot, update, **kwargs)
-  File "/usr/local/lib/python3.10/dist-packages/aiogram/dispatcher/dispatcher.py", line 157, in feed_update
-    response = await self.update.wrap_outer_middleware(
-  File "/usr/local/lib/python3.10/dist-packages/aiogram/dispatcher/middlewares/error.py", line 25, in __call__
-    return await handler(event, data)
-  File "/usr/local/lib/python3.10/dist-packages/aiogram/dispatcher/middlewares/user_context.py", line 27, in __call__
-    return await handler(event, data)
-  File "/usr/local/lib/python3.10/dist-packages/aiogram/fsm/middleware.py", line 41, in __call__
-    return await handler(event, data)
-  File "/usr/local/lib/python3.10/dist-packages/aiogram/dispatcher/event/telegram.py", line 120, in trigger
-    return await wrapped_inner(event, kwargs)
-  File "/usr/local/lib/python3.10/dist-packages/aiogram/dispatcher/event/handler.py", line 42, in call
-    return await wrapped()
-  File "/usr/local/lib/python3.10/dist-packages/aiogram/dispatcher/dispatcher.py", line 275, in _listen_update
-    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
-  File "/usr/local/lib/python3.10/dist-packages/aiogram/dispatcher/router.py", line 116, in propagate_event
-    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
-  File "/usr/local/lib/python3.10/dist-packages/aiogram/dispatcher/router.py", line 111, in _wrapped
-    return await self._propagate_event(
-  File "/usr/local/lib/python3.10/dist-packages/aiogram/dispatcher/router.py", line 144, in _propagate_event
-    response = await router.propagate_event(update_type=update_type, event=event, **kwargs)
-  File "/usr/local/lib/python3.10/dist-packages/aiogram/dispatcher/router.py", line 116, in propagate_event
-    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
-  File "/usr/local/lib/python3.10/dist-packages/aiogram/dispatcher/router.py", line 111, in _wrapped
-    return await self._propagate_event(
-  File "/usr/local/lib/python3.10/dist-packages/aiogram/dispatcher/router.py", line 136, in _propagate_event
-    response = await observer.trigger(event, **kwargs)
-  File "/usr/local/lib/python3.10/dist-packages/aiogram/dispatcher/event/telegram.py", line 120, in trigger
-    return await wrapped_inner(event, kwargs)
-  File "/usr/local/lib/python3.10/dist-packages/aiogram/dispatcher/event/handler.py", line 42, in call
-    return await wrapped()
-  File "/post_buy/bot/handlers/input_date.py", line 72, in inp_data
-    free = check_time_public(post.name_channels, date)
-  File "/post_buy/bot/handlers/input_date.py", line 19, in check_time_public
-    for name in name_channels:
-TypeError: 'NoneType' object is not iterable
-INFO 2023-11-03 11:22:45,648 Update id=875858922 is not handled. Duration 81 ms by bot id=6499605545
-ERROR 2023-11-03 11:22:45,649 Cause exception while process update id=875858922 by bot id=6499605545
-TypeError: 'NoneType' object is not iterable
-Traceback (most recent call last):
-  File "/usr/local/lib/python3.10/dist-packages/aiogram/dispatcher/dispatcher.py", line 308, in _process_update
-    response = await self.feed_update(bot, update, **kwargs)
-  File "/usr/local/lib/python3.10/dist-packages/aiogram/dispatcher/dispatcher.py", line 157, in feed_update
-    response = await self.update.wrap_outer_middleware(
-  File "/usr/local/lib/python3.10/dist-packages/aiogram/dispatcher/middlewares/error.py", line 25, in __call__
-    return await handler(event, data)
-  File "/usr/local/lib/python3.10/dist-packages/aiogram/dispatcher/middlewares/user_context.py", line 27, in __call__
-    return await handler(event, data)
-  File "/usr/local/lib/python3.10/dist-packages/aiogram/fsm/middleware.py", line 41, in __call__
-    return await handler(event, data)
-  File "/usr/local/lib/python3.10/dist-packages/aiogram/dispatcher/event/telegram.py", line 120, in trigger
-    return await wrapped_inner(event, kwargs)
-  File "/usr/local/lib/python3.10/dist-packages/aiogram/dispatcher/event/handler.py", line 42, in call
-    return await wrapped()
-  File "/usr/local/lib/python3.10/dist-packages/aiogram/dispatcher/dispatcher.py", line 275, in _listen_update
-    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
-  File "/usr/local/lib/python3.10/dist-packages/aiogram/dispatcher/router.py", line 116, in propagate_event
-    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
-  File "/usr/local/lib/python3.10/dist-packages/aiogram/dispatcher/router.py", line 111, in _wrapped
-    return await self._propagate_event(
-  File "/usr/local/lib/python3.10/dist-packages/aiogram/dispatcher/router.py", line 144, in _propagate_event
-    response = await router.propagate_event(update_type=update_type, event=event, **kwargs)
-  File "/usr/local/lib/python3.10/dist-packages/aiogram/dispatcher/router.py", line 116, in propagate_event
-    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
-  File "/usr/local/lib/python3.10/dist-packages/aiogram/dispatcher/router.py", line 111, in _wrapped
-    return await self._propagate_event(
-  File "/usr/local/lib/python3.10/dist-packages/aiogram/dispatcher/router.py", line 136, in _propagate_event
-    response = await observer.trigger(event, **kwargs)
-  File "/usr/local/lib/python3.10/dist-packages/aiogram/dispatcher/event/telegram.py", line 120, in trigger
-    return await wrapped_inner(event, kwargs)
-  File "/usr/local/lib/python3.10/dist-packages/aiogram/dispatcher/event/handler.py", line 42, in call
-    return await wrapped()
-  File "/post_buy/bot/handlers/input_date.py", line 72, in inp_data
-    free = check_time_public(post.name_channels, date)
-  File "/post_buy/bot/handlers/input_date.py", line 19, in check_time_public
-    for name in name_channels:
-TypeError: 'NoneType' object is not iterable
-INFO 2023-11-03 11:22:55,445 Update id=875858923 is not handled. Duration 71 ms by bot id=6499605545
-ERROR 2023-11-03 11:22:55,445 Cause exception while process update id=875858923 by bot id=6499605545
-TypeError: 'NoneType' object is not iterable
-Traceback (most recent call last):
-  File "/usr/local/lib/python3.10/dist-packages/aiogram/dispatcher/dispatcher.py", line 308, in _process_update
-    response = await self.feed_update(bot, update, **kwargs)
-  File "/usr/local/lib/python3.10/dist-packages/aiogram/dispatcher/dispatcher.py", line 157, in feed_update
-    response = await self.update.wrap_outer_middleware(
-  File "/usr/local/lib/python3.10/dist-packages/aiogram/dispatcher/middlewares/error.py", line 25, in __call__
-    return await handler(event, data)
-  File "/usr/local/lib/python3.10/dist-packages/aiogram/dispatcher/middlewares/user_context.py", line 27, in __call__
-    return await handler(event, data)
-  File "/usr/local/lib/python3.10/dist-packages/aiogram/fsm/middleware.py", line 41, in __call__
-    return await handler(event, data)
-  File "/usr/local/lib/python3.10/dist-packages/aiogram/dispatcher/event/telegram.py", line 120, in trigger
-    return await wrapped_inner(event, kwargs)
-  File "/usr/local/lib/python3.10/dist-packages/aiogram/dispatcher/event/handler.py", line 42, in call
-    return await wrapped()
-  File "/usr/local/lib/python3.10/dist-packages/aiogram/dispatcher/dispatcher.py", line 275, in _listen_update
-    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
-  File "/usr/local/lib/python3.10/dist-packages/aiogram/dispatcher/router.py", line 116, in propagate_event
-    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
-  File "/usr/local/lib/python3.10/dist-packages/aiogram/dispatcher/router.py", line 111, in _wrapped
-    return await self._propagate_event(
-  File "/usr/local/lib/python3.10/dist-packages/aiogram/dispatcher/router.py", line 144, in _propagate_event
-    response = await router.propagate_event(update_type=update_type, event=event, **kwargs)
-  File "/usr/local/lib/python3.10/dist-packages/aiogram/dispatcher/router.py", line 116, in propagate_event
-    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
-  File "/usr/local/lib/python3.10/dist-packages/aiogram/dispatcher/router.py", line 111, in _wrapped
-    return await self._propagate_event(
-  File "/usr/local/lib/python3.10/dist-packages/aiogram/dispatcher/router.py", line 136, in _propagate_event
-    response = await observer.trigger(event, **kwargs)
-  File "/usr/local/lib/python3.10/dist-packages/aiogram/dispatcher/event/telegram.py", line 120, in trigger
-    return await wrapped_inner(event, kwargs)
-  File "/usr/local/lib/python3.10/dist-packages/aiogram/dispatcher/event/handler.py", line 42, in call
-    return await wrapped()
-  File "/post_buy/bot/handlers/input_date.py", line 72, in inp_data
-    free = check_time_public(post.name_channels, date)
-  File "/post_buy/bot/handlers/input_date.py", line 19, in check_time_public
-    for name in name_channels:
-TypeError: 'NoneType' object is not iterable
-INFO 2023-11-03 11:23:11,052 Update id=875858924 is not handled. Duration 193 ms by bot id=6499605545
-ERROR 2023-11-03 11:23:11,053 Cause exception while process update id=875858924 by bot id=6499605545
-TypeError: 'NoneType' object is not iterable
-Traceback (most recent call last):
-  File "/usr/local/lib/python3.10/dist-packages/aiogram/dispatcher/dispatcher.py", line 308, in _process_update
-    response = await self.feed_update(bot, update, **kwargs)
-  File "/usr/local/lib/python3.10/dist-packages/aiogram/dispatcher/dispatcher.py", line 157, in feed_update
-    response = await self.update.wrap_outer_middleware(
-  File "/usr/local/lib/python3.10/dist-packages/aiogram/dispatcher/middlewares/error.py", line 25, in __call__
-    return await handler(event, data)
-  File "/usr/local/lib/python3.10/dist-packages/aiogram/dispatcher/middlewares/user_context.py", line 27, in __call__
-    return await handler(event, data)
-  File "/usr/local/lib/python3.10/dist-packages/aiogram/fsm/middleware.py", line 41, in __call__
-    return await handler(event, data)
-  File "/usr/local/lib/python3.10/dist-packages/aiogram/dispatcher/event/telegram.py", line 120, in trigger
-    return await wrapped_inner(event, kwargs)
-  File "/usr/local/lib/python3.10/dist-packages/aiogram/dispatcher/event/handler.py", line 42, in call
-    return await wrapped()
-  File "/usr/local/lib/python3.10/dist-packages/aiogram/dispatcher/dispatcher.py", line 275, in _listen_update
-    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
-  File "/usr/local/lib/python3.10/dist-packages/aiogram/dispatcher/router.py", line 116, in propagate_event
-    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
-  File "/usr/local/lib/python3.10/dist-packages/aiogram/dispatcher/router.py", line 111, in _wrapped
-    return await self._propagate_event(
-  File "/usr/local/lib/python3.10/dist-packages/aiogram/dispatcher/router.py", line 144, in _propagate_event
-    response = await router.propagate_event(update_type=update_type, event=event, **kwargs)
-  File "/usr/local/lib/python3.10/dist-packages/aiogram/dispatcher/router.py", line 116, in propagate_event
-    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
-  File "/usr/local/lib/python3.10/dist-packages/aiogram/dispatcher/router.py", line 111, in _wrapped
-    return await self._propagate_event(
-  File "/usr/local/lib/python3.10/dist-packages/aiogram/dispatcher/router.py", line 136, in _propagate_event
-    response = await observer.trigger(event, **kwargs)
-  File "/usr/local/lib/python3.10/dist-packages/aiogram/dispatcher/event/telegram.py", line 120, in trigger
-    return await wrapped_inner(event, kwargs)
-  File "/usr/local/lib/python3.10/dist-packages/aiogram/dispatcher/event/handler.py", line 42, in call
-    return await wrapped()
-  File "/post_buy/bot/handlers/input_date.py", line 72, in inp_data
-    free = check_time_public(post.name_channels, date)
-  File "/post_buy/bot/handlers/input_date.py", line 19, in check_time_public
-    for name in name_channels:
-TypeError: 'NoneType' object is not iterable
-INFO 2023-11-03 11:23:17,240 Update id=875858925 is not handled. Duration 77 ms by bot id=6499605545
-ERROR 2023-11-03 11:23:17,241 Cause exception while process update id=875858925 by bot id=6499605545
-TypeError: 'NoneType' object is not iterable
-Traceback (most recent call last):
-  File "/usr/local/lib/python3.10/dist-packages/aiogram/dispatcher/dispatcher.py", line 308, in _process_update
-    response = await self.feed_update(bot, update, **kwargs)
-  File "/usr/local/lib/python3.10/dist-packages/aiogram/dispatcher/dispatcher.py", line 157, in feed_update
-    response = await self.update.wrap_outer_middleware(
-  File "/usr/local/lib/python3.10/dist-packages/aiogram/dispatcher/middlewares/error.py", line 25, in __call__
-    return await handler(event, data)
-  File "/usr/local/lib/python3.10/dist-packages/aiogram/dispatcher/middlewares/user_context.py", line 27, in __call__
-    return await handler(event, data)
-  File "/usr/local/lib/python3.10/dist-packages/aiogram/fsm/middleware.py", line 41, in __call__
-    return await handler(event, data)
-  File "/usr/local/lib/python3.10/dist-packages/aiogram/dispatcher/event/telegram.py", line 120, in trigger
-    return await wrapped_inner(event, kwargs)
-  File "/usr/local/lib/python3.10/dist-packages/aiogram/dispatcher/event/handler.py", line 42, in call
-    return await wrapped()
-  File "/usr/local/lib/python3.10/dist-packages/aiogram/dispatcher/dispatcher.py", line 275, in _listen_update
-    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
-  File "/usr/local/lib/python3.10/dist-packages/aiogram/dispatcher/router.py", line 116, in propagate_event
-    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
-  File "/usr/local/lib/python3.10/dist-packages/aiogram/dispatcher/router.py", line 111, in _wrapped
-    return await self._propagate_event(
-  File "/usr/local/lib/python3.10/dist-packages/aiogram/dispatcher/router.py", line 144, in _propagate_event
-    response = await router.propagate_event(update_type=update_type, event=event, **kwargs)
-  File "/usr/local/lib/python3.10/dist-packages/aiogram/dispatcher/router.py", line 116, in propagate_event
-    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
-  File "/usr/local/lib/python3.10/dist-packages/aiogram/dispatcher/router.py", line 111, in _wrapped
-    return await self._propagate_event(
-  File "/usr/local/lib/python3.10/dist-packages/aiogram/dispatcher/router.py", line 136, in _propagate_event
-    response = await observer.trigger(event, **kwargs)
-  File "/usr/local/lib/python3.10/dist-packages/aiogram/dispatcher/event/telegram.py", line 120, in trigger
-    return await wrapped_inner(event, kwargs)
-  File "/usr/local/lib/python3.10/dist-packages/aiogram/dispatcher/event/handler.py", line 42, in call
-    return await wrapped()
-  File "/post_buy/bot/handlers/input_date.py", line 72, in inp_data
-    free = check_time_public(post.name_channels, date)
-  File "/post_buy/bot/handlers/input_date.py", line 19, in check_time_public
-    for name in name_channels:
-TypeError: 'NoneType' object is not iterable
-INFO 2023-11-03 11:23:57,740 Update id=875858926 is handled. Duration 232 ms by bot id=6499605545
-INFO 2023-11-03 11:23:59,762 Update id=875858927 is handled. Duration 129 ms by bot id=6499605545
+  File "/post_buy/bot/handlers/payment.py", line 30, in payment_user
+    price = prices.get_price_publication(district=post.category_channel)
+  File "/post_buy/bot/db/Prices.py", line 57, in get_price_publication
+    return ans[0][0]
+IndexError: list index out of range
