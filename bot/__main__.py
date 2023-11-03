@@ -2,8 +2,8 @@ import asyncio
 import sys
 
 
-sys.path.append("D:/telegram_bots/post_buy")
-# sys.path.append("/post_buy")
+# sys.path.append("D:/telegram_bots/post_buy")
+sys.path.append("/post_buy")
 from bot.utils.UnfixChatMessage import UnfixChatMessage
 
 from bot.utils.SendingPost import SendingPost
