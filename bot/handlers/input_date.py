@@ -7,7 +7,7 @@ from aiogram.types import Message, CallbackQuery
 
 from bot import keyboards as kb
 from bot.config import bot
-from bot.db import publications
+from bot.db import publications, channels
 from bot.db.Post import Post
 from bot.states import States
 from bot.utils.GetMessage import get_mes
@@ -69,6 +69,9 @@ async def inp_data(message: Message, state: FSMContext):
     change: bool = data.get("change")
     await bot.delete_message(chat_id=id, message_id=message.message_id)
     date = f"{post.date} {message.text}"
+    # name_channels = post.name_channels
+    # if name_channels is None:
+    #     name_channels = channels.get_channel_category(post.category_channel)
     free = check_time_public(post.name_channels, date)
     if type(free) is str:
         post = Post(id_user=id)
