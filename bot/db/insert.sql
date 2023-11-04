@@ -12,5 +12,7 @@ drop table publication;
 insert into price (district, price_publication, price_fixing)
 values (1, '', '');
 
+insert into channel (id_telegram, district, name) values (-1001714328313, 'КАО', 'тест');
 drop table channel;
+select * from channel;
 

@@ -8,6 +8,7 @@ from aiogram.types import Message, CallbackQuery
 from bot import keyboards as kb
 from bot.config import bot
 from bot.db import publications, channels
+from bot.const import tzinfo
 from bot.db.Post import Post
 from bot.states import States
 from bot.utils.GetMessage import get_mes
@@ -69,10 +70,9 @@ async def inp_data(message: Message, state: FSMContext):
     change: bool = data.get("change")
     await bot.delete_message(chat_id=id, message_id=message.message_id)
     date = f"{post.date} {message.text}"
-    # name_channels = post.name_channels
-    # if name_channels is None:
-    #     name_channels = channels.get_channel_category(post.category_channel)
     free = check_time_public(post.name_channels, date)
+    hour, minute = message.text.split(":")
+    hour, minute = int(hour), int(minute)
     if type(free) is str:
         post = Post(id_user=id)
         await state.update_data(post=post)
@@ -82,15 +82,25 @@ async def inp_data(message: Message, state: FSMContext):
                                          f'{get_mes("start_buy_ats")}',
                                     reply_markup=kb.keyboard_channel_category())
         return 200
-    if post.date == datetime.datetime.now().strftime('%d/%m'):
-        if message.text <= (datetime.datetime.now() + datetime.timedelta(hours=1)).strftime('%H:%M'):
-            await bot.edit_message_text(chat_id=id,
-                                        message_id=post.message_id,
-                                        text=f'В это время нельзя забронировать пост',
-                                        reply_markup=kb.kb_by_time)
-            return 200
+
+    if hour > 23 or minute > 59:
+        await bot.edit_message_text(chat_id=id,
+                                    message_id=post.message_id,
+                                    text=f'В это время нельзя забронировать пост',
+                                    reply_markup=kb.kb_by_time)
+        return 200
+    time_publ = datetime.datetime.now(tz=tzinfo)
+    # if post.date == time_publ.strftime('%d/%m'):
+    #     time_er = time_publ + + datetime.timedelta(hours=1)
+    #     if hour < time_er.hour or hour == time_er.hour and minute < time_er.minute:
+    #         await bot.edit_message_text(chat_id=id,
+    #                                     message_id=post.message_id,
+    #                                     text=f'В это время нельзя забронировать пост',
+    #                                     reply_markup=kb.kb_by_time)
+    #         return 200
     post.date = date
     await state.update_data(post=post)
+
     if change:
         await bot.edit_message_text(chat_id=id,
                                     message_id=post.message_id,
