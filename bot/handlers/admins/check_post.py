@@ -24,7 +24,7 @@ async def check_post(call: CallbackQuery, state: FSMContext):
         case "confirm":
             await bot.answer_callback_query(callback_query_id=call.id,
                                             text=get_mes("successes_del_mess"),
-                                            show_alert=True)
+                                            show_alert=False)
             await bot.delete_message(chat_id=call.from_user.id, message_id=call.message.message_id)
             await bot.send_message(chat_id=int(data[1]),
                                    text="Ваш пост подтвердили, осталось только оплатить",
@@ -38,7 +38,7 @@ async def check_post(call: CallbackQuery, state: FSMContext):
         case "confirmChange":
             await bot.answer_callback_query(callback_query_id=call.id,
                                             text=get_mes("successes_del_mess"),
-                                            show_alert=True)
+                                            show_alert=False)
             await bot.delete_message(chat_id=call.from_user.id, message_id=call.message.message_id)
             await bot.send_message(chat_id=int(data[1]),
                                    text="Ваш пост подтвердили\n"

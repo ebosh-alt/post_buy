@@ -45,7 +45,7 @@ async def unfix_admin(call: CallbackQuery):
         await bot.unpin_all_chat_messages(chat_id=channel.id_telegram)
     bot.answer_callback_query(callback_query_id=call.id,
                               text="Сообщения откреплены",
-                              show_alert=True)
+                              show_alert=False)
 
 
 admin_rt = router

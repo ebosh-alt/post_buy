@@ -22,7 +22,7 @@ async def check_post(call: CallbackQuery):
                                    reply_markup=kb.success_payment_kb_user)
             await bot.answer_callback_query(callback_query_id=call.id,
                                             text=get_mes("successes_del_mess"),
-                                            show_alert=True)
+                                            show_alert=False)
         case "paymentNo":
             price = data[2]
             await bot.send_message(chat_id=int(data[1]),

@@ -23,10 +23,11 @@ async def choice_fix(call: CallbackQuery, state: FSMContext):
     post: Post = data["post"]
     match call.data:
         case "no_fixing":
+            post.fixing = False
+        case _:
             fixing = int(call.data.replace("_day", ""))
             post.fixing = fixing
-        case _:
-            post.fixing = False
+
     await state.update_data(post=post)
     logging.log(logging.INFO, f"post fixing {post.fixing}")
 
