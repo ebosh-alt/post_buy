@@ -12,23 +12,22 @@ from bot.db import publications, channels
 
 
 async def send_mess(chat_id: int, text: str, fixing: bool) -> int:
-    print(text)
     mes = await bot.send_message(chat_id=chat_id, text=text)
-    if fixing:
+    if fixing != '0':
         await bot.pin_chat_message(message_id=mes.message_id, chat_id=chat_id)
     return mes.message_id
 
 
 async def send_photo(chat_id: int, text: str, photo, fixing: bool) -> int:
     mes = await bot.send_photo(chat_id=chat_id, photo=photo, caption=text)
-    if fixing:
+    if fixing != '0':
         await bot.pin_chat_message(message_id=mes.message_id, chat_id=chat_id)
     return mes.message_id
 
 
 async def send_video(chat_id: int, text: str, video, fixing: bool) -> int:
     mes = await bot.send_video(chat_id=chat_id, video=video, caption=text)
-    if fixing:
+    if fixing != '0':
         await bot.pin_chat_message(message_id=mes.message_id, chat_id=chat_id)
     return mes.message_id
 

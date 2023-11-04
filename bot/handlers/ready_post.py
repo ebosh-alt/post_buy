@@ -36,7 +36,7 @@ async def ready_post(call: CallbackQuery, state: FSMContext):
             publication.fixing = ((datetime.datetime.now(tz=tzinfo) + datetime.timedelta(days=post.fixing)).
                                   strftime("%Y/%m/%d %H:%M"))
         else:
-            post.fixing = False
+            publication.fixing = False
         logging.log(logging.INFO, f"add publication {publication.__dict__}")
         publications.add(publication)
     await bot.edit_message_text(chat_id=call.from_user.id,
