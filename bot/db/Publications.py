@@ -14,7 +14,7 @@ class Publication:
             self.photo: str | None = kwargs.get('photo')
             self.video: str | None = kwargs.get('video')
             self.publication_time: str | None = kwargs.get('publication_time')
-            self.fixing: bool = kwargs.get('fixing')
+            self.fixing: bool | str = kwargs.get('fixing')
             self.message_id: int | None = kwargs.get('message_id')
         else:
             self.name_channel: str | None = None
@@ -24,8 +24,8 @@ class Publication:
             self.photo: str | None = None
             self.video: str | None = None
             self.publication_time: str | None = None
-            self.fixing: bool = False
-            self.message_id: int | None = 0
+            self.fixing: bool | str = False
+            self.message_id: int = 0
 
     def __iter__(self):
         dict_class = self.__dict__

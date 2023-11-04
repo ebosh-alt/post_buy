@@ -32,13 +32,17 @@ async def ready_post(call: CallbackQuery, state: FSMContext):
         publication.text = post.text
         publication.video = post.video
         publication.publication_time = post.date
-        publication.fixing = ((datetime.datetime.now(tz=tzinfo) + datetime.timedelta(days=post.fixing)).
-                              strftime("%Y/%m/%d %H:%M"))
+        if post.fixing:
+            publication.fixing = ((datetime.datetime.now(tz=tzinfo) + datetime.timedelta(days=post.fixing)).
+                                  strftime("%Y/%m/%d %H:%M"))
+        else:
+            post.fixing = False
         logging.log(logging.INFO, f"add publication {publication.__dict__}")
         publications.add(publication)
     await bot.edit_message_text(chat_id=call.from_user.id,
                                 message_id=call.message.message_id,
                                 text='Все прошло успешно!')
     await state.clear()
+
 
 ready_post_rt = router
