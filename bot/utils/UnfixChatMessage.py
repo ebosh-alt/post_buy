@@ -30,7 +30,7 @@ class UnfixChatMessage:
     def work(self):
         current_time = datetime.datetime.now(tz=tzinfo).strftime("%Y/%m/%d %H:%M")
         for publication in publications:
-            if publication.fixing == current_time:
+            if publication.fixing == current_time and publication.message_id != 0:
                 chat_id = channels.get_id_by_name(publication.name_channel)
                 message_id = publication.message_id
                 loop = asyncio.get_event_loop()

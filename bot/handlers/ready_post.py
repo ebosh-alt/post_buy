@@ -39,9 +39,11 @@ async def ready_post(call: CallbackQuery, state: FSMContext):
             publication.fixing = False
         logging.log(logging.INFO, f"add publication {publication.__dict__}")
         publications.add(publication)
-    await bot.edit_message_text(chat_id=call.from_user.id,
-                                message_id=call.message.message_id,
-                                text='Все прошло успешно!')
+    await bot.delete_message(chat_id=call.from_user.id, message_id=call.message.message_id)
+    await bot.send_message(chat_id=call.from_user.id,
+                           # message_id=call.message.message_id,
+                           text='Все прошло успешно!',
+                           reply_markup=kb.greeting_kb)
     await state.clear()
 
 

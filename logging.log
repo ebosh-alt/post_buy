@@ -1,40 +1,34 @@
-INFO 2023-11-04 14:00:41,892 Start polling
-INFO 2023-11-04 14:00:41,902 Publishing {'id': 1, 'name_channel': 'тест', 'id_user': 5191469996, 'text': 'final test', 'price_publication': 250, 'photo': 'bot/media/AgACAgIAAxkBAAICaGVGTYshQEnAIrORwgIrr332zPaYAAJs0zEb_nIxSreS7zjzl15VAQADAgADeAADMwQ_616.jpg', 'video': '', 'publication_time': '04/11 19:59', 'fixing': '0', 'message_id': 988}
-INFO 2023-11-04 14:00:42,106 Run polling for bot @Gorodchat_bot id=6499605545 - 'Gorodchatbot'
-INFO 2023-11-04 14:00:46,492 Update id=875860330 is handled. Duration 270 ms by bot id=6499605545
-INFO 2023-11-04 14:00:48,798 Update id=875860331 is handled. Duration 137 ms by bot id=6499605545
-INFO 2023-11-04 14:00:50,521 ['КАО', 'ЛАО', 'ОАО', 'САО', 'ЦАО']
-INFO 2023-11-04 14:00:50,642 Update id=875860332 is handled. Duration 154 ms by bot id=6499605545
-INFO 2023-11-04 14:00:53,384 ['КАО', 'ЛАО', 'ОАО', 'САО', 'ЦАО']
-INFO 2023-11-04 14:00:53,597 Update id=875860333 is handled. Duration 487 ms by bot id=6499605545
-INFO 2023-11-04 14:00:55,508 Update id=875860334 is handled. Duration 208 ms by bot id=6499605545
-INFO 2023-11-04 14:01:01,630 Update id=875860335 is handled. Duration 120 ms by bot id=6499605545
-INFO 2023-11-04 14:01:04,948 Update id=875860336 is handled. Duration 188 ms by bot id=6499605545
-INFO 2023-11-04 14:01:06,382 post fixing False
-INFO 2023-11-04 14:01:06,725 Update id=875860337 is handled. Duration 345 ms by bot id=6499605545
-INFO 2023-11-04 14:01:08,144 Update id=875860338 is handled. Duration 156 ms by bot id=6499605545
-INFO 2023-11-04 14:01:15,461 Update id=875860339 is not handled. Duration 2 ms by bot id=6499605545
-INFO 2023-11-04 14:01:17,179 Update id=875860340 is handled. Duration 856 ms by bot id=6499605545
-INFO 2023-11-04 14:01:20,427 check_post data: confirm_5191469996
-INFO 2023-11-04 14:01:20,678 Update id=875860341 is handled. Duration 252 ms by bot id=6499605545
-INFO 2023-11-04 14:01:21,912 Publishing {'id': 1, 'name_channel': 'тест', 'id_user': 5191469996, 'text': 'final test', 'price_publication': 250, 'photo': 'bot/media/AgACAgIAAxkBAAICaGVGTYshQEnAIrORwgIrr332zPaYAAJs0zEb_nIxSreS7zjzl15VAQADAgADeAADMwQ_616.jpg', 'video': '', 'publication_time': '04/11 19:59', 'fixing': '0', 'message_id': 988}
-INFO 2023-11-04 14:01:24,598 Update id=875860342 is handled. Duration 189 ms by bot id=6499605545
-INFO 2023-11-04 14:01:26,281 Update id=875860343 is handled. Duration 212 ms by bot id=6499605545
-INFO 2023-11-04 14:01:29,516 delete message in checking payment
-INFO 2023-11-04 14:01:29,590 Update id=875860344 is handled. Duration 241 ms by bot id=6499605545
-INFO 2023-11-04 14:01:33,512 add publication {'id': 2, 'name_channel': 'тест', 'id_user': 5191469996, 'text': 'final test2', 'price_publication': 250, 'photo': 'bot/media/AgACAgIAAxkBAAICd2VGTqyaNHqsLJixYgYQItVfjMXLAAJs0zEb_nIxSreS7zjzl15VAQADAgADeAADMwQ_631.jpg', 'video': '', 'publication_time': '04/11 17:02', 'fixing': False, 'message_id': 0}
-INFO 2023-11-04 14:01:33,603 Update id=875860345 is handled. Duration 193 ms by bot id=6499605545
-INFO 2023-11-04 14:01:45,332 Update id=875860346 is not handled. Duration 1 ms by bot id=6499605545
-INFO 2023-11-04 14:01:53,563 Update id=875860347 is not handled. Duration 1 ms by bot id=6499605545
-INFO 2023-11-04 14:02:01,955 Publishing {'id': 1, 'name_channel': 'тест', 'id_user': 5191469996, 'text': 'final test', 'price_publication': 250, 'photo': 'bot/media/AgACAgIAAxkBAAICaGVGTYshQEnAIrORwgIrr332zPaYAAJs0zEb_nIxSreS7zjzl15VAQADAgADeAADMwQ_616.jpg', 'video': '', 'publication_time': '04/11 19:59', 'fixing': '0', 'message_id': 988}
-INFO 2023-11-04 14:02:01,956 Publishing {'id': 2, 'name_channel': 'тест', 'id_user': 5191469996, 'text': 'final test2', 'price_publication': 250, 'photo': 'bot/media/AgACAgIAAxkBAAICd2VGTqyaNHqsLJixYgYQItVfjMXLAAJs0zEb_nIxSreS7zjzl15VAQADAgADeAADMwQ_631.jpg', 'video': '', 'publication_time': '04/11 17:02', 'fixing': '0', 'message_id': 0}
-INFO 2023-11-04 14:02:08,734 Update id=875860348 is not handled. Duration 2 ms by bot id=6499605545
-INFO 2023-11-04 14:02:14,642 Update id=875860349 is not handled. Duration 2 ms by bot id=6499605545
-INFO 2023-11-04 14:02:40,418 Update id=875860350 is not handled. Duration 1 ms by bot id=6499605545
-INFO 2023-11-04 14:02:41,997 Publishing {'id': 1, 'name_channel': 'тест', 'id_user': 5191469996, 'text': 'final test', 'price_publication': 250, 'photo': 'bot/media/AgACAgIAAxkBAAICaGVGTYshQEnAIrORwgIrr332zPaYAAJs0zEb_nIxSreS7zjzl15VAQADAgADeAADMwQ_616.jpg', 'video': '', 'publication_time': '04/11 19:59', 'fixing': '0', 'message_id': 988}
-INFO 2023-11-04 14:02:41,998 Publishing {'id': 2, 'name_channel': 'тест', 'id_user': 5191469996, 'text': 'final test2', 'price_publication': 250, 'photo': 'bot/media/AgACAgIAAxkBAAICd2VGTqyaNHqsLJixYgYQItVfjMXLAAJs0zEb_nIxSreS7zjzl15VAQADAgADeAADMwQ_631.jpg', 'video': '', 'publication_time': '04/11 17:02', 'fixing': '0', 'message_id': 0}
-INFO 2023-11-04 14:03:22,013 Publishing {'id': 1, 'name_channel': 'тест', 'id_user': 5191469996, 'text': 'final test', 'price_publication': 250, 'photo': 'bot/media/AgACAgIAAxkBAAICaGVGTYshQEnAIrORwgIrr332zPaYAAJs0zEb_nIxSreS7zjzl15VAQADAgADeAADMwQ_616.jpg', 'video': '', 'publication_time': '04/11 19:59', 'fixing': '0', 'message_id': 988}
-INFO 2023-11-04 14:03:22,014 Publishing {'id': 2, 'name_channel': 'тест', 'id_user': 5191469996, 'text': 'final test2', 'price_publication': 250, 'photo': 'bot/media/AgACAgIAAxkBAAICd2VGTqyaNHqsLJixYgYQItVfjMXLAAJs0zEb_nIxSreS7zjzl15VAQADAgADeAADMwQ_631.jpg', 'video': '', 'publication_time': '04/11 17:02', 'fixing': '0', 'message_id': 0}
-INFO 2023-11-04 14:04:02,036 Publishing {'id': 1, 'name_channel': 'тест', 'id_user': 5191469996, 'text': 'final test', 'price_publication': 250, 'photo': 'bot/media/AgACAgIAAxkBAAICaGVGTYshQEnAIrORwgIrr332zPaYAAJs0zEb_nIxSreS7zjzl15VAQADAgADeAADMwQ_616.jpg', 'video': '', 'publication_time': '04/11 19:59', 'fixing': '0', 'message_id': 988}
-INFO 2023-11-04 14:04:02,037 Publishing {'id': 2, 'name_channel': 'тест', 'id_user': 5191469996, 'text': 'final test2', 'price_publication': 250, 'photo': 'bot/media/AgACAgIAAxkBAAICd2VGTqyaNHqsLJixYgYQItVfjMXLAAJs0zEb_nIxSreS7zjzl15VAQADAgADeAADMwQ_631.jpg', 'video': '', 'publication_time': '04/11 17:02', 'fixing': '0', 'message_id': 0}
-INFO 2023-11-04 14:04:17,945 Update id=875860351 is not handled. Duration 2 ms by bot id=6499605545
+INFO 2023-11-05 23:40:04,399 Start polling
+INFO 2023-11-05 23:40:04,752 Run polling for bot @Posts_buy_bot id=6532487125 - 'Posts_buy'
+INFO 2023-11-05 23:40:06,686 Update id=273144736 is handled. Duration 516 ms by bot id=6532487125
+INFO 2023-11-05 23:40:08,738 Update id=273144737 is handled. Duration 608 ms by bot id=6532487125
+INFO 2023-11-05 23:40:11,861 Update id=273144738 is handled. Duration 858 ms by bot id=6532487125
+INFO 2023-11-05 23:40:12,750 Update id=273144739 is handled. Duration 156 ms by bot id=6532487125
+INFO 2023-11-05 23:40:14,528 Update id=273144740 is handled. Duration 139 ms by bot id=6532487125
+INFO 2023-11-05 23:40:16,098 Update id=273144741 is handled. Duration 296 ms by bot id=6532487125
+INFO 2023-11-05 23:40:17,513 post fixing 1
+INFO 2023-11-05 23:40:17,801 Update id=273144742 is handled. Duration 280 ms by bot id=6532487125
+INFO 2023-11-05 23:40:19,303 Update id=273144743 is handled. Duration 125 ms by bot id=6532487125
+INFO 2023-11-05 23:40:22,044 Update id=273144744 is handled. Duration 812 ms by bot id=6532487125
+INFO 2023-11-05 23:40:28,759 check_post data: confirm_5191469996
+INFO 2023-11-05 23:40:29,100 Update id=273144745 is handled. Duration 358 ms by bot id=6532487125
+INFO 2023-11-05 23:40:32,798 Update id=273144746 is handled. Duration 500 ms by bot id=6532487125
+INFO 2023-11-05 23:40:34,232 Update id=273144747 is handled. Duration 592 ms by bot id=6532487125
+INFO 2023-11-05 23:40:38,536 delete message in checking payment
+INFO 2023-11-05 23:40:38,736 Update id=273144748 is handled. Duration 858 ms by bot id=6532487125
+INFO 2023-11-05 23:40:42,939 add publication {'id': 3, 'name_channel': 'Городок нефтяников', 'id_user': 5191469996, 'text': 'kjda', 'price_publication': 1650, 'photo': '', 'video': '', 'publication_time': '07/11 20:20', 'fixing': '2023/11/07 02:40', 'message_id': 0}
+INFO 2023-11-05 23:40:42,959 add publication {'id': 4, 'name_channel': 'Изумрудный берег', 'id_user': 5191469996, 'text': 'kjda', 'price_publication': 1650, 'photo': '', 'video': '', 'publication_time': '07/11 20:20', 'fixing': '2023/11/07 02:40', 'message_id': 0}
+INFO 2023-11-05 23:40:42,975 add publication {'id': 5, 'name_channel': 'Пригородный', 'id_user': 5191469996, 'text': 'kjda', 'price_publication': 1650, 'photo': '', 'video': '', 'publication_time': '07/11 20:20', 'fixing': '2023/11/07 02:40', 'message_id': 0}
+INFO 2023-11-05 23:40:42,990 add publication {'id': 6, 'name_channel': 'Серебряный берег', 'id_user': 5191469996, 'text': 'kjda', 'price_publication': 1650, 'photo': '', 'video': '', 'publication_time': '07/11 20:20', 'fixing': '2023/11/07 02:40', 'message_id': 0}
+INFO 2023-11-05 23:40:43,004 add publication {'id': 7, 'name_channel': 'Блюхера/Королева', 'id_user': 5191469996, 'text': 'kjda', 'price_publication': 1650, 'photo': '', 'video': '', 'publication_time': '07/11 20:20', 'fixing': '2023/11/07 02:40', 'message_id': 0}
+INFO 2023-11-05 23:40:43,017 add publication {'id': 8, 'name_channel': 'гор. Водников', 'id_user': 5191469996, 'text': 'kjda', 'price_publication': 1650, 'photo': '', 'video': '', 'publication_time': '07/11 20:20', 'fixing': '2023/11/07 02:40', 'message_id': 0}
+INFO 2023-11-05 23:40:43,030 add publication {'id': 9, 'name_channel': 'Заозерный', 'id_user': 5191469996, 'text': 'kjda', 'price_publication': 1650, 'photo': '', 'video': '', 'publication_time': '07/11 20:20', 'fixing': '2023/11/07 02:40', 'message_id': 0}
+INFO 2023-11-05 23:40:43,035 add publication {'id': 10, 'name_channel': 'Заозерный (Бархатовой)', 'id_user': 5191469996, 'text': 'kjda', 'price_publication': 1650, 'photo': '', 'video': '', 'publication_time': '07/11 20:20', 'fixing': '2023/11/07 02:40', 'message_id': 0}
+INFO 2023-11-05 23:40:43,055 add publication {'id': 11, 'name_channel': 'Заозерный (Менделеева-Комбинатская)', 'id_user': 5191469996, 'text': 'kjda', 'price_publication': 1650, 'photo': '', 'video': '', 'publication_time': '07/11 20:20', 'fixing': '2023/11/07 02:40', 'message_id': 0}
+INFO 2023-11-05 23:40:43,070 add publication {'id': 12, 'name_channel': 'Заозерный (Первомайский ктр)', 'id_user': 5191469996, 'text': 'kjda', 'price_publication': 1650, 'photo': '', 'video': '', 'publication_time': '07/11 20:20', 'fixing': '2023/11/07 02:40', 'message_id': 0}
+INFO 2023-11-05 23:40:43,084 add publication {'id': 13, 'name_channel': 'Сибади-Кристалл-Поселковые', 'id_user': 5191469996, 'text': 'kjda', 'price_publication': 1650, 'photo': '', 'video': '', 'publication_time': '07/11 20:20', 'fixing': '2023/11/07 02:40', 'message_id': 0}
+INFO 2023-11-05 23:40:43,097 add publication {'id': 14, 'name_channel': 'СИБНИИСХОЗ', 'id_user': 5191469996, 'text': 'kjda', 'price_publication': 1650, 'photo': '', 'video': '', 'publication_time': '07/11 20:20', 'fixing': '2023/11/07 02:40', 'message_id': 0}
+INFO 2023-11-05 23:40:43,111 add publication {'id': 15, 'name_channel': 'Юбилейный (лукьяновка)', 'id_user': 5191469996, 'text': 'kjda', 'price_publication': 1650, 'photo': '', 'video': '', 'publication_time': '07/11 20:20', 'fixing': '2023/11/07 02:40', 'message_id': 0}
+INFO 2023-11-05 23:40:43,672 Update id=273144749 is handled. Duration 937 ms by bot id=6532487125
+INFO 2023-11-05 23:40:47,226 Polling stopped
+INFO 2023-11-05 23:40:47,229 Polling stopped for bot @Posts_buy_bot id=6532487125 - 'Posts_buy'

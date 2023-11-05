@@ -7,6 +7,7 @@ from bot import keyboards as kb
 from bot.config import Config, bot
 from bot.db.Post import Post
 from bot.states import States
+from bot.utils.GetMessage import get_mes
 
 router = Router()
 
@@ -57,8 +58,8 @@ async def inp_content(message: Message, state: FSMContext):
                                  caption=post.text)
             await bot.send_photo(chat_id=Config.admin_id,
                                  photo=photo,
-                                 caption=f"{post.text} \n\nid пользователя: {id}\n"
-                                         f"username пользователя: {message.from_user.username}",
+                                 caption=get_mes("mes_info_post_admin", post=post.text, date=post.date, id=id,
+                                                 username=message.from_user.username),
                                  reply_markup=keyboard)
         elif video is not None:
             path = await download_media(message, "video")
@@ -69,15 +70,15 @@ async def inp_content(message: Message, state: FSMContext):
                                  caption=post.text)
             await bot.send_video(chat_id=Config.admin_id,
                                  video=video,
-                                 caption=f"{post.text} \n\nid пользователя: {id}\n"
-                                         f"username пользователя: {message.from_user.username}",
+                                 caption=get_mes("mes_info_post_admin", post=post.text, date=post.date, id=id,
+                                                 username=message.from_user.username),
                                  reply_markup=keyboard)
         else:
             await bot.send_message(chat_id=id,
                                    text=post.text)
             await bot.send_message(chat_id=Config.admin_id,
-                                   text=f"{post.text} \n\nid пользователя: {id}\n"
-                                        f"username пользователя: {message.from_user.username}",
+                                   text=get_mes("mes_info_post_admin", post=post.text, date=post.date, id=id,
+                                                username=message.from_user.username),
                                    reply_markup=keyboard)
         await bot.delete_message(chat_id=id, message_id=message.message_id)
         mes = await bot.send_message(chat_id=id,

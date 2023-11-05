@@ -113,6 +113,7 @@ async def inp_name_channel(message: Message, state: FSMContext):
     text = text[0:-2]
     text += "\n\nЕсли что-то не верно, отправьте повторно список"
     buttons = {}
+    buttons.update({"Вернуться в начало": "buy_advertisement"})
     buttons.update({"Продолжить >>": "next_step_2"})
     mes1 = await bot.send_message(chat_id=id,
                                   text=get_list_all_name())

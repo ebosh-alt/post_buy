@@ -12,9 +12,10 @@ class Config:
     link_processing_policy = "https://docs.aiogram.dev/en/dev-3.x/dispatcher/filters/magic_filters.html"
     host = "0.0.0.0"
     port = 80
-    # admin_id = 1321317438
-    admin_id = 686171972
+    admin_id = 1321317438
+    # admin_id = 686171972
     requisites = 4274320106431458
+    id_theme_board = 1332
 
 
 dp = Dispatcher()

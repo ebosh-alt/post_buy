@@ -1,3 +1,5 @@
+import logging
+
 from aiogram import F
 from aiogram import Router
 from aiogram.fsm.context import FSMContext
@@ -7,6 +9,7 @@ from bot.config import bot
 from bot.db.Post import Post
 from bot.states import States
 from bot.utils.GetMessage import get_mes
+from bot import keyboards as kb
 
 router = Router()
 
@@ -26,12 +29,15 @@ async def con_doc(call: CallbackQuery, state: FSMContext):
     try:
         await bot.edit_message_text(chat_id=id,
                                     message_id=call.message.message_id,
-                                    text=get_mes("inp_content"))
+                                    text=get_mes("inp_content"),
+                                    reply_markup=kb.to_start_kb)
         post.message_id = call.message.message_id
 
-    except:
+    except Exception as e:
+        logging.log(logging.ERROR, e)
         mes = await bot.send_message(chat_id=id,
-                                     text=get_mes("inp_content"))
+                                     text=get_mes("inp_content"),
+                                     reply_markup=kb.to_start_kb)
         post.message_id = mes.message_id
     await state.update_data(post=post)
 

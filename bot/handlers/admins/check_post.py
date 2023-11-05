@@ -28,7 +28,8 @@ async def check_post(call: CallbackQuery, state: FSMContext):
             await bot.delete_message(chat_id=call.from_user.id, message_id=call.message.message_id)
             await bot.send_message(chat_id=int(data[1]),
                                    text="Ваш пост подтвердили, осталось только оплатить",
-                                   reply_markup=kb.create_keyboard({"Оплатить": "payment"}))
+                                   reply_markup=kb.create_keyboard(
+                                       {"Оплатить": "payment", "Вернуться в начало": "buy_advertisement"}))
         case "cancel":
             await state.set_state(States.admin_comment)
             await bot.edit_message_text(chat_id=id,

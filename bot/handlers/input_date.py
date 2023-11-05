@@ -1,4 +1,5 @@
 import datetime
+import logging
 
 from aiogram import F
 from aiogram import Router
@@ -39,7 +40,7 @@ async def choice_data(call: CallbackQuery, state: FSMContext):
         try:
             await bot.delete_message(chat_id=id, message_id=post.message_id)
         except:
-            pass
+            logging.log(logging.INFO, "Error deleting message in choice_data::29")
     keyboard = kb.create_keyboard(kb.button_date())
     await bot.edit_message_text(chat_id=id,
                                 message_id=call.message.message_id,
@@ -59,7 +60,8 @@ async def start_inp_date(call: CallbackQuery, state: FSMContext):
     await state.update_data(post=post)
     await bot.edit_message_text(chat_id=id,
                                 message_id=call.message.message_id,
-                                text=get_mes("inp_time"))
+                                text=get_mes("inp_time"),
+                                reply_markup=kb.to_start_kb)
 
 
 @router.message(States.post, F.text.regexp(r'[0-9]{2}:[0-9]{2}'))
@@ -91,15 +93,13 @@ async def inp_data(message: Message, state: FSMContext):
         return 200
     time_publ = datetime.datetime.now(tz=tzinfo)
     # if post.date == time_publ.strftime('%d/%m'):
-    #     time_er = time_publ + + datetime.timedelta(hours=1)
+    #     time_er = time_publ + datetime.timedelta(hours=1)
     #     if hour < time_er.hour or hour == time_er.hour and minute < time_er.minute:
     #         await bot.edit_message_text(chat_id=id,
     #                                     message_id=post.message_id,
     #                                     text=f'В это время нельзя забронировать пост',
     #                                     reply_markup=kb.kb_by_time)
     #         return 200
-    post.date = date
-    await state.update_data(post=post)
 
     if change:
         await bot.edit_message_text(chat_id=id,
@@ -108,10 +108,19 @@ async def inp_data(message: Message, state: FSMContext):
                                          "Чтобы посты добавились в ожидание нажмите кнопку 'Готово'",
                                     reply_markup=kb.success_payment_kb_user)
     else:
-        await bot.edit_message_text(chat_id=id,
-                                    message_id=post.message_id,
-                                    text=get_mes("fixing"),
-                                    reply_markup=kb.fixing_kb)
+        if post.category_channel == "Доска объявлений":
+            post.fixing = False
+            await bot.edit_message_text(chat_id=id,
+                                        message_id=post.message_id,
+                                        text=get_mes("documents"),
+                                        reply_markup=kb.document_kb)
+        else:
+            await bot.edit_message_text(chat_id=id,
+                                        message_id=post.message_id,
+                                        text=get_mes("fixing"),
+                                        reply_markup=kb.fixing_kb)
+    post.date = date
+    await state.update_data(post=post)
 
 
 input_date_rt = router

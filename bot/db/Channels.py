@@ -80,7 +80,7 @@ class Channels(Sqlite3_Database):
             match channel.district:
                 case "Весь город":
                     category = "Весь город"
-                case "":
+                case "Доска объявлений":
                     category = "Доска объявлений"
                 case _:
                     category = channel.district
@@ -88,6 +88,7 @@ class Channels(Sqlite3_Database):
                 all_category.update({category: category})
         all_category.update({"Весь город": "Весь город"})
         all_category.update({"1 любой чат": "1 любой чат"})
+        # all_category.update({"Вернуться в начало": "buy_advertisement"})
         return all_category
 
     def get_all_district(self):
@@ -99,10 +100,8 @@ class Channels(Sqlite3_Database):
             obj_tuple = self.get_elem_sqllite3(id)
             obj = Channel(id=obj_tuple[0],
                           id_telegram=obj_tuple[1],
-                          # city=obj_tuple[2],
                           district=obj_tuple[2],
-                          name=obj_tuple[3]
-                          )
+                          name=obj_tuple[3])
             return obj
         return False
 
