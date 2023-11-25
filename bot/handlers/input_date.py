@@ -42,15 +42,16 @@ async def choice_data(call: CallbackQuery, state: FSMContext):
         except:
             logging.log(logging.INFO, "Error deleting message in choice_data::29")
     keyboard = kb.create_keyboard(kb.button_date())
-    await bot.edit_message_text(chat_id=id,
-                                message_id=call.message.message_id,
-                                text=get_mes("inp_date"),
-                                reply_markup=keyboard)
-    # post.message_id = call.message.message_id
-    # await state.update_data(post=post)
+    await bot.delete_message(chat_id=id, message_id=call.message.message_id)
+    mes = await bot.send_message(chat_id=id,
+                                 # message_id=call.message.message_id,
+                                 text=get_mes("inp_date"),
+                                 reply_markup=keyboard)
+    post.message_id = mes.message_id
+    await state.update_data(post=post)
 
 
-@router.callback_query(F.data.in_(kb.button_date().values()))
+@router.callback_query(States.post, F.data.in_(kb.button_date().values()))
 async def start_inp_date(call: CallbackQuery, state: FSMContext):
     id = call.from_user.id
     data = await state.get_data()
@@ -92,14 +93,14 @@ async def inp_data(message: Message, state: FSMContext):
                                     reply_markup=kb.kb_by_time)
         return 200
     time_publ = datetime.datetime.now(tz=tzinfo)
-    # if post.date == time_publ.strftime('%d/%m'):
-    #     time_er = time_publ + datetime.timedelta(hours=1)
-    #     if hour < time_er.hour or hour == time_er.hour and minute < time_er.minute:
-    #         await bot.edit_message_text(chat_id=id,
-    #                                     message_id=post.message_id,
-    #                                     text=f'В это время нельзя забронировать пост',
-    #                                     reply_markup=kb.kb_by_time)
-    #         return 200
+    if post.date == time_publ.strftime('%d/%m'):
+        time_er = time_publ + datetime.timedelta(hours=1)
+        if hour < time_er.hour or hour == time_er.hour and minute < time_er.minute:
+            await bot.edit_message_text(chat_id=id,
+                                        message_id=post.message_id,
+                                        text=f'В это время нельзя забронировать пост',
+                                        reply_markup=kb.kb_by_time)
+            return 200
 
     if change:
         await bot.edit_message_text(chat_id=id,

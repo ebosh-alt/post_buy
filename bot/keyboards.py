@@ -1,3 +1,5 @@
+import logging
+
 from aiogram import types
 from aiogram.utils.keyboard import InlineKeyboardBuilder, ReplyKeyboardBuilder
 from bot.db import channels
