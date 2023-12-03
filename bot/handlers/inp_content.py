@@ -1,3 +1,6 @@
+import asyncio
+import logging
+
 from aiogram import F
 from aiogram import Router
 from aiogram.fsm.context import FSMContext
@@ -74,6 +77,9 @@ async def inp_content(message: Message, state: FSMContext):
                                                  username=message.from_user.username),
                                  reply_markup=keyboard)
         else:
+            logging.log(logging.INFO, get_mes("mes_info_post_admin", post=post.text, date=post.date, id=id,
+                                              username=message.from_user.username))
+
             await bot.send_message(chat_id=id,
                                    text=post.text)
             await bot.send_message(chat_id=Config.admin_id,

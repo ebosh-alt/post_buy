@@ -34,7 +34,9 @@ async def choice_fix(call: CallbackQuery, state: FSMContext):
     await bot.edit_message_text(chat_id=id,
                                 message_id=call.message.message_id,
                                 text=get_mes("documents"),
-                                reply_markup=kb.document_kb)
+                                reply_markup=kb.document_kb,
+                                parse_mode=None,
+                                disable_web_page_preview=True)
 
 
 choice_fix_rt = router

@@ -41,7 +41,10 @@ async def choice_data(call: CallbackQuery, state: FSMContext):
             await bot.delete_message(chat_id=id, message_id=post.message_id)
         except:
             logging.log(logging.INFO, "Error deleting message in choice_data::29")
-    keyboard = kb.create_keyboard(kb.button_date())
+
+    button = kb.button_date()
+    logging.log(logging.INFO, button)
+    keyboard = kb.create_keyboard(button)
     await bot.delete_message(chat_id=id, message_id=call.message.message_id)
     mes = await bot.send_message(chat_id=id,
                                  # message_id=call.message.message_id,

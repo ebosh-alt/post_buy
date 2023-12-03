@@ -15,7 +15,7 @@ values (1, '', '');
 
 insert into channel (id_telegram, district, name)
 values (-1001714328313, 'КАО', 'тест');
-drop table channel;
+drop table publication;
 select *
 from channel;
 select *

@@ -64,6 +64,8 @@ class Channels(Sqlite3_Database):
 
     def get_all_name(self):
         all_name = self.get_attribute("name")
+        ind = all_name.index("Доска объявлений")
+        del all_name[ind]
         return all_name
 
     def get_id_by_name(self, name):

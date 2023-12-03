@@ -1,3 +1,5 @@
+import logging
+
 from aiogram import F
 from aiogram import Router
 from aiogram.fsm.context import FSMContext
@@ -53,11 +55,13 @@ async def check_pay(call: CallbackQuery, state: FSMContext):
     buttons = {"Подтвердить": f"paymentYes_{call.from_user.id}",
                "Отклонить": f"paymentNo_{call.from_user.id}_{post.price}"}
     await state.update_data(post=post)
+    logging.log(logging.INFO, get_mes("mes_by_admin_payment", username=call.from_user.username, id=call.from_user.id,
+                                      price=post.price))
     await bot.send_message(chat_id=Config.admin_id,
-                           text=f"username пользователя: {call.from_user.username}\n"
-                                f"id пользователя: {call.from_user.id}\n"
-                                f"сумма перевода: {post.price}",
-                           reply_markup=kb.create_keyboard(buttons, 2))
+                           text=get_mes("mes_by_admin_payment", username=call.from_user.username, id=call.from_user.id,
+                                        price=post.price),
+                           reply_markup=kb.create_keyboard(buttons, 2),
+                           parse_mode="MarkdownV2")
 
 
 payment_rt = router
