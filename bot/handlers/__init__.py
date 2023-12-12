@@ -4,7 +4,7 @@ from .buy_advertisement import buy_rt
 from .input_date import input_date_rt
 from .choice_fixing import choice_fix_rt
 from .confirm_doc import confirm_doc_rt
-from .inp_content import inp_content_rt
+from .input_content import inp_content_rt
 from .admins import router_admin
 from .payment import payment_rt
 from .ready_post import ready_post_rt

@@ -25,7 +25,7 @@ async def greeting_user(message: Message, state: FSMContext):
 async def greeting_user(message: Message, state: FSMContext):
     id = message.from_user.id
     if id not in users:
-        users.add(User(id=id))
+        users.add(User(id=id, username=message.from_user.username))
         # mes = await bot.send_message(chat_id=id,
         #                              text=get_mes("greeting_new_user"))
         # await state.set_state(States.profile)

@@ -1,69 +1,28 @@
-INFO 2023-11-26 15:41:34,453 Start polling
-INFO 2023-11-26 15:41:34,651 Run polling for bot @Gorodchat_bot id=6499605545 - 'Gorodchatbot'
-INFO 2023-11-26 15:41:35,630 Update id=875867718 is handled. Duration 283 ms by bot id=6499605545
-INFO 2023-11-26 15:41:37,403 Update id=875867719 is handled. Duration 185 ms by bot id=6499605545
-INFO 2023-11-26 15:41:38,408 {'Сегодня (26/11)': '26/11', 'Завтра (27/11)': '27/11', '28/11': '28/11', '29/11': '29/11', '30/11': '30/11', '01/12': '01/12', '02/12': '02/12', 'Вернуться в начало': 'buy_advertisement'}
-INFO 2023-11-26 15:41:38,789 Update id=875867720 is handled. Duration 382 ms by bot id=6499605545
-INFO 2023-11-26 15:41:39,986 Update id=875867721 is handled. Duration 132 ms by bot id=6499605545
-INFO 2023-11-26 15:41:41,102 Update id=875867722 is handled. Duration 197 ms by bot id=6499605545
-INFO 2023-11-26 15:41:42,365 Update id=875867723 is handled. Duration 275 ms by bot id=6499605545
-INFO 2023-11-26 15:41:43,393 {'Сегодня (26/11)': '26/11', 'Завтра (27/11)': '27/11', '28/11': '28/11', '29/11': '29/11', '30/11': '30/11', '01/12': '01/12', '02/12': '02/12', 'Вернуться в начало': 'buy_advertisement'}
-INFO 2023-11-26 15:41:43,570 Update id=875867724 is handled. Duration 178 ms by bot id=6499605545
-INFO 2023-11-26 15:41:44,981 Update id=875867725 is handled. Duration 106 ms by bot id=6499605545
-INFO 2023-11-26 15:41:47,862 Update id=875867726 is handled. Duration 306 ms by bot id=6499605545
-INFO 2023-11-26 15:41:49,373 Update id=875867727 is handled. Duration 267 ms by bot id=6499605545
-INFO 2023-11-26 15:41:51,486 ррр
+INFO 2023-12-03 06:33:22,565 Start polling
+INFO 2023-12-03 06:33:22,754 Run polling for bot @Gorodchat_bot id=6499605545 - 'Gorodchatbot'
+INFO 2023-12-03 06:33:24,853 Update id=875869565 is handled. Duration 245 ms by bot id=6499605545
+INFO 2023-12-03 06:33:26,418 Update id=875869566 is handled. Duration 227 ms by bot id=6499605545
+INFO 2023-12-03 06:33:27,778 Update id=875869567 is handled. Duration 137 ms by bot id=6499605545
+INFO 2023-12-03 06:33:28,994 {'Сегодня (03/12)': '03/12', 'Завтра (04/12)': '04/12', '05/12': '05/12', '06/12': '06/12', '07/12': '07/12', '08/12': '08/12', '09/12': '09/12', 'Вернуться в начало': 'buy_advertisement'}
+INFO 2023-12-03 06:33:29,166 Update id=875869568 is handled. Duration 173 ms by bot id=6499605545
+INFO 2023-12-03 06:33:31,432 Update id=875869569 is handled. Duration 83 ms by bot id=6499605545
+INFO 2023-12-03 06:33:32,166 Update id=875869570 is handled. Duration 181 ms by bot id=6499605545
+INFO 2023-12-03 06:33:33,180 post fixing 5
+INFO 2023-12-03 06:33:33,365 Update id=875869571 is handled. Duration 186 ms by bot id=6499605545
+INFO 2023-12-03 06:33:34,650 Update id=875869572 is handled. Duration 77 ms by bot id=6499605545
+INFO 2023-12-03 06:33:39,569 О рекламе в городских чатах!
 
-**дата поста:** ``29/11 21:10``
-**id пользователя:** ``686171972``
-**username пользователя:** ``Nikita_Ivvvv``
+Дорогие друзья, все мы видим что в чатах периодически появляется много непонятной рекламы и агитации. Напоминаем - это делать запрещено, и все кто рассылают спам - будут заблокированы.
 
-INFO 2023-11-26 15:41:52,647 Update id=875867728 is not handled. Duration 1238 ms by bot id=6499605545
-ERROR 2023-11-26 15:41:52,648 Cause exception while process update id=875867728 by bot id=6499605545
-TelegramBadRequest: Telegram server says - Bad Request: can't parse entities: Can't find end of the entity starting at byte offset 143
-Traceback (most recent call last):
-  File "/usr/local/lib/python3.10/dist-packages/aiogram/dispatcher/dispatcher.py", line 308, in _process_update
-    response = await self.feed_update(bot, update, **kwargs)
-  File "/usr/local/lib/python3.10/dist-packages/aiogram/dispatcher/dispatcher.py", line 157, in feed_update
-    response = await self.update.wrap_outer_middleware(
-  File "/usr/local/lib/python3.10/dist-packages/aiogram/dispatcher/middlewares/error.py", line 25, in __call__
-    return await handler(event, data)
-  File "/usr/local/lib/python3.10/dist-packages/aiogram/dispatcher/middlewares/user_context.py", line 27, in __call__
-    return await handler(event, data)
-  File "/usr/local/lib/python3.10/dist-packages/aiogram/fsm/middleware.py", line 41, in __call__
-    return await handler(event, data)
-  File "/usr/local/lib/python3.10/dist-packages/aiogram/dispatcher/event/telegram.py", line 120, in trigger
-    return await wrapped_inner(event, kwargs)
-  File "/usr/local/lib/python3.10/dist-packages/aiogram/dispatcher/event/handler.py", line 42, in call
-    return await wrapped()
-  File "/usr/local/lib/python3.10/dist-packages/aiogram/dispatcher/dispatcher.py", line 275, in _listen_update
-    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
-  File "/usr/local/lib/python3.10/dist-packages/aiogram/dispatcher/router.py", line 116, in propagate_event
-    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
-  File "/usr/local/lib/python3.10/dist-packages/aiogram/dispatcher/router.py", line 111, in _wrapped
-    return await self._propagate_event(
-  File "/usr/local/lib/python3.10/dist-packages/aiogram/dispatcher/router.py", line 144, in _propagate_event
-    response = await router.propagate_event(update_type=update_type, event=event, **kwargs)
-  File "/usr/local/lib/python3.10/dist-packages/aiogram/dispatcher/router.py", line 116, in propagate_event
-    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
-  File "/usr/local/lib/python3.10/dist-packages/aiogram/dispatcher/router.py", line 111, in _wrapped
-    return await self._propagate_event(
-  File "/usr/local/lib/python3.10/dist-packages/aiogram/dispatcher/router.py", line 136, in _propagate_event
-    response = await observer.trigger(event, **kwargs)
-  File "/usr/local/lib/python3.10/dist-packages/aiogram/dispatcher/event/telegram.py", line 120, in trigger
-    return await wrapped_inner(event, kwargs)
-  File "/usr/local/lib/python3.10/dist-packages/aiogram/dispatcher/event/handler.py", line 42, in call
-    return await wrapped()
-  File "/post_buy/bot/handlers/inp_content.py", line 87, in inp_content
-    await bot.send_message(chat_id=Config.admin_id,
-  File "/usr/local/lib/python3.10/dist-packages/aiogram/client/bot.py", line 2709, in send_message
-    return await self(call, request_timeout=request_timeout)
-  File "/usr/local/lib/python3.10/dist-packages/aiogram/client/bot.py", line 432, in __call__
-    return await self.session(self, method, timeout=request_timeout)
-  File "/usr/local/lib/python3.10/dist-packages/aiogram/client/session/base.py", line 257, in __call__
-    return cast(TelegramType, await middleware(bot, method))
-  File "/usr/local/lib/python3.10/dist-packages/aiogram/client/session/aiohttp.py", line 175, in make_request
-    response = self.check_response(
-  File "/usr/local/lib/python3.10/dist-packages/aiogram/client/session/base.py", line 120, in check_response
-    raise TelegramBadRequest(method=method, message=description)
-aiogram.exceptions.TelegramBadRequest: Telegram server says - Bad Request: can't parse entities: Can't find end of the entity starting at byte offset 143
+Однако у нас для вас есть обновление: если у Вас есть необходимость разместить и закрепить информацию в чатах – мы подготовили для вас чат-бот, который поможет это сделать.
+@Gorodchat_bot
+
+Благодаря чат-боту мы надеемся избежать спама и улучшить качество модерирования чатов
+
+дата поста: 06/12 20:20
+id пользователя: 686171972
+username пользователя: Nikita_Ivvvv
+
+INFO 2023-12-03 06:33:39,908 Update id=875869573 is handled. Duration 419 ms by bot id=6499605545
+INFO 2023-12-03 06:34:04,839 check_post data: confirm_686171972
+INFO 2023-12-03 06:34:05,474 Update id=875869574 is handled. Duration 636 ms by bot id=6499605545

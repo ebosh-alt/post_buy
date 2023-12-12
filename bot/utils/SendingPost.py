@@ -13,24 +13,34 @@ from bot.db import publications, channels
 
 async def send_mess(chat_id: int, text: str, fixing: bool, reply_to_message_id: int = None) -> int:
     mes = await bot.send_message(chat_id=chat_id, text=text, reply_to_message_id=reply_to_message_id)
-    if fixing != '0':
-        await bot.pin_chat_message(message_id=mes.message_id, chat_id=chat_id)
-    time.sleep(15)
-    await bot.delete_message(chat_id=chat_id, message_id=mes.message_id)
+    try:
+        if fixing != '0':
+            await bot.pin_chat_message(message_id=mes.message_id, chat_id=chat_id)
+    except:
+        await bot.send_message(chat_id=Config.admin_id,
+                               text=f"не получилось отправить сообщение\nсодержимое поста: \n\n{text}")
     return mes.message_id
 
 
 async def send_photo(chat_id: int, text: str, photo, fixing: bool, reply_to_message_id: int = None) -> int:
     mes = await bot.send_photo(chat_id=chat_id, photo=photo, caption=text, reply_to_message_id=reply_to_message_id)
-    if fixing != '0':
-        await bot.pin_chat_message(message_id=mes.message_id, chat_id=chat_id)
+    try:
+        if fixing != '0':
+            await bot.pin_chat_message(message_id=mes.message_id, chat_id=chat_id)
+    except:
+        await bot.send_message(chat_id=Config.admin_id,
+                               text=f"не получилось отправить сообщение\nсодержимое поста: \n\n{text}")
     return mes.message_id
 
 
 async def send_video(chat_id: int, text: str, video, fixing: bool, reply_to_message_id: int = None) -> int:
     mes = await bot.send_video(chat_id=chat_id, video=video, caption=text, reply_to_message_id=reply_to_message_id)
-    if fixing != '0':
-        await bot.pin_chat_message(message_id=mes.message_id, chat_id=chat_id)
+    try:
+        if fixing != '0':
+            await bot.pin_chat_message(message_id=mes.message_id, chat_id=chat_id)
+    except:
+        await bot.send_message(chat_id=Config.admin_id,
+                               text=f"не получилось отправить сообщение\nсодержимое поста: \n\n{text}")
     return mes.message_id
 
 

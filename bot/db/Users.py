@@ -7,14 +7,16 @@ class User:
     def __init__(self, id, **kwargs):
         self.id: int = id
         if len(kwargs):
-            self.name_organization: str | None = kwargs.get('name_organization')
-            self.number_phone: str | None = kwargs.get('number_phone')
-            self.inn: str | None = kwargs.get('inn')
+            self.username: str | None = kwargs.get("username")
+            # self.name_organization: str | None = kwargs.get('name_organization')
+            # self.number_phone: str | None = kwargs.get('number_phone')
+            # self.inn: str | None = kwargs.get('inn')
 
         else:
-            self.name_organization: str | None = None
-            self.number_phone: str | None = None
-            self.inn: str | None = None
+            self.username: str | None = None
+            # self.name_organization: str | None = None
+            # self.number_phone: str | None = None
+            # self.inn: str | None = None
 
     def __iter__(self):
         dict_class = self.__dict__
@@ -53,8 +55,6 @@ class Users(Sqlite3_Database):
         if id in self:
             obj_tuple = self.get_elem_sqllite3(id)
             obj = User(id=obj_tuple[0],
-                       name_organization=obj_tuple[1],
-                       number_phone=obj_tuple[2],
-                       inn=obj_tuple[3])
+                       username=obj_tuple[1])
             return obj
         return False

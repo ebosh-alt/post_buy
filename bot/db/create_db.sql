@@ -1,8 +1,6 @@
 create table users(
     id integer primary key,
-    name_organization varchar(255),
-    number_phone varchar(12),
-    inn varchar(12)
+    username varchar(255)
 );
 
 create table price(
@@ -47,7 +45,7 @@ drop table if exists price;
 -- create table  platforms();
 -- select * from publication;
 -- drop table publication;
--- drop table users;
+drop table users;
 -- drop table price;
 -- drop table channel;
 
