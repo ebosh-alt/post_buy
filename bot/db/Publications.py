@@ -69,6 +69,16 @@ class Publications(Sqlite3_Database):
         conn.close()
         return answer
 
+    def get_by_name(self, name) -> Publication:
+        conn = self.sqlite_connect()
+        curs = conn.cursor()
+        curs.execute(
+            f'''SELECT id from {self.table_name} where name_channel = '{name}' ''')
+        answer = curs.fetchone()
+        conn.close()
+
+        return self.get(answer[0])
+
     def get(self, id: int) -> Publication | bool:
         if id in self:
             obj_tuple = self.get_elem_sqllite3(id)

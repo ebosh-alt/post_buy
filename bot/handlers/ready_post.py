@@ -12,6 +12,7 @@ from bot.const import tzinfo
 from bot.db import Publication, publications
 from bot.db.Post import Post
 from bot.states import States
+from bot.utils import SendPostSupport
 
 router = Router()
 
@@ -21,10 +22,9 @@ async def ready_post(call: CallbackQuery, state: FSMContext):
     data = await state.get_data()
     post: Post = data["post"]
     await bot.delete_message(chat_id=call.from_user.id, message_id=post.message_id)
-
+    publication_id = len(publications) + 1
     for name in post.name_channels:
         publication = Publication(len(publications) + 1)
-
         publication.name_channel = name.strip()
         publication.id_user = call.from_user.id
         publication.price_publication = post.price
@@ -44,6 +44,10 @@ async def ready_post(call: CallbackQuery, state: FSMContext):
                            # message_id=call.message.message_id,
                            text='Все прошло успешно!',
                            reply_markup=kb.greeting_kb)
+    publication = publications.get(publication_id)
+    await SendPostSupport.send(publication=publication,
+                               name_channels=post.name_channels,
+                               username=call.from_user.username)
     await state.clear()
 
 

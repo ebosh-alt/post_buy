@@ -16,7 +16,8 @@ class Config:
     # admin_id = 686171972
     requisites = 4274320106431458
     id_theme_board = 1332
+    support_id = -1002112953139
 
 
 dp = Dispatcher()
-bot = Bot(Config.api_key)
+bot = Bot(Config.api_key, disable_web_page_preview=True)
