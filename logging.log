@@ -1,28 +1,7 @@
-INFO 2023-12-03 06:33:22,565 Start polling
-INFO 2023-12-03 06:33:22,754 Run polling for bot @Gorodchat_bot id=6499605545 - 'Gorodchatbot'
-INFO 2023-12-03 06:33:24,853 Update id=875869565 is handled. Duration 245 ms by bot id=6499605545
-INFO 2023-12-03 06:33:26,418 Update id=875869566 is handled. Duration 227 ms by bot id=6499605545
-INFO 2023-12-03 06:33:27,778 Update id=875869567 is handled. Duration 137 ms by bot id=6499605545
-INFO 2023-12-03 06:33:28,994 {'Сегодня (03/12)': '03/12', 'Завтра (04/12)': '04/12', '05/12': '05/12', '06/12': '06/12', '07/12': '07/12', '08/12': '08/12', '09/12': '09/12', 'Вернуться в начало': 'buy_advertisement'}
-INFO 2023-12-03 06:33:29,166 Update id=875869568 is handled. Duration 173 ms by bot id=6499605545
-INFO 2023-12-03 06:33:31,432 Update id=875869569 is handled. Duration 83 ms by bot id=6499605545
-INFO 2023-12-03 06:33:32,166 Update id=875869570 is handled. Duration 181 ms by bot id=6499605545
-INFO 2023-12-03 06:33:33,180 post fixing 5
-INFO 2023-12-03 06:33:33,365 Update id=875869571 is handled. Duration 186 ms by bot id=6499605545
-INFO 2023-12-03 06:33:34,650 Update id=875869572 is handled. Duration 77 ms by bot id=6499605545
-INFO 2023-12-03 06:33:39,569 О рекламе в городских чатах!
-
-Дорогие друзья, все мы видим что в чатах периодически появляется много непонятной рекламы и агитации. Напоминаем - это делать запрещено, и все кто рассылают спам - будут заблокированы.
-
-Однако у нас для вас есть обновление: если у Вас есть необходимость разместить и закрепить информацию в чатах – мы подготовили для вас чат-бот, который поможет это сделать.
-@Gorodchat_bot
-
-Благодаря чат-боту мы надеемся избежать спама и улучшить качество модерирования чатов
-
-дата поста: 06/12 20:20
-id пользователя: 686171972
-username пользователя: Nikita_Ivvvv
-
-INFO 2023-12-03 06:33:39,908 Update id=875869573 is handled. Duration 419 ms by bot id=6499605545
-INFO 2023-12-03 06:34:04,839 check_post data: confirm_686171972
-INFO 2023-12-03 06:34:05,474 Update id=875869574 is handled. Duration 636 ms by bot id=6499605545
+INFO 2023-12-12 13:38:50,493 Start polling
+INFO 2023-12-12 13:38:50,746 Run polling for bot @Gorodchat_bot id=6499605545 - 'Gorodchatbot'
+INFO 2023-12-12 13:38:50,868 Update id=875874328 is not handled. Duration 31 ms by bot id=6499605545
+INFO 2023-12-12 13:38:50,869 Update id=875874329 is not handled. Duration 31 ms by bot id=6499605545
+INFO 2023-12-12 13:38:50,869 Update id=875874330 is not handled. Duration 15 ms by bot id=6499605545
+INFO 2023-12-12 13:38:54,972 Polling stopped
+INFO 2023-12-12 13:38:54,974 Polling stopped for bot @Gorodchat_bot id=6499605545 - 'Gorodchatbot'

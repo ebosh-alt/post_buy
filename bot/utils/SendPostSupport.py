@@ -5,12 +5,13 @@ from aiogram.types import FSInputFile
 from bot.config import bot
 from bot.db import Publication
 from bot.config import Config
+from bot.utils import ParseDate
 from bot.utils.GetMessage import get_mes
 
 
 async def send(publication: Publication, name_channels: tuple, username: str):
     text = get_mes("mes_support", publication_text=publication.text, username=f"@{username}",
-                   channels=", ".join(name_channels), date=publication.publication_time,
+                   channels=", ".join(name_channels), date=ParseDate.parse(publication.publication_time),
                    price=publication.price_publication, fixing=publication.fixing)
     if publication.photo != "":
         photo = FSInputFile(publication.photo)

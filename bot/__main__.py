@@ -23,7 +23,7 @@ async def main() -> None:
 if __name__ == "__main__":
     logging.basicConfig(level=logging.INFO,
                         filemode="w",
-                        filename="logging.log",
+                        # filename="logging.log",
                         format="%(levelname)s %(asctime)s %(message)s",
                         encoding='utf-8')
     with suppress(KeyboardInterrupt):

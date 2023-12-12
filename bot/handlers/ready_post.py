@@ -12,7 +12,7 @@ from bot.const import tzinfo
 from bot.db import Publication, publications
 from bot.db.Post import Post
 from bot.states import States
-from bot.utils import SendPostSupport
+from bot.utils import SendPostSupport, ParseDate
 
 router = Router()
 
@@ -32,9 +32,9 @@ async def ready_post(call: CallbackQuery, state: FSMContext):
         publication.text = post.text
         publication.video = post.video
         publication.publication_time = post.date
+
         if post.fixing:
-            publication.fixing = ((datetime.datetime.now(tz=tzinfo) + datetime.timedelta(days=post.fixing)).
-                                  strftime("%Y/%m/%d %H:%M"))
+            publication.fixing = ParseDate.parse(publication.publication_time, post.fixing)
         else:
             publication.fixing = False
         logging.log(logging.INFO, f"add publication {publication.__dict__}")
